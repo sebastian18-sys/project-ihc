@@ -22,6 +22,11 @@ ubicarse en el proyecto clonado
 
 -> git push origin main
 
+<<<<<<< HEAD
 
 
 -> ESTO ES UN PASO MALICIOSO
+=======
+-> *Recomendación: Antes de usar DE MODIFICAR TU ARCHIVO usar git pull origin main. Esto con el fin de traerte las últimas actualizaciones
+
+>>>>>>> 709026b10f927354be601829d3169e6677262f99
