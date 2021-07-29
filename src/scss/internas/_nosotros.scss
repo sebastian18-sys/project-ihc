@@ -1,0 +1,18 @@
+.contenido-nosotros{
+
+    @include tablet{
+        @include grid(2, 2rem);
+    }
+
+    .titulo-contenido{
+        font-weight: $bold;
+    }
+    
+    .text-nosotros blockquote{
+        margin-top:1rem;
+        color:$blanco;
+        font-weight: margin-top;
+    }
+    
+    
+}

@@ -1,0 +1,84 @@
+
+ 
+.icono{
+    text-align: center;
+    img{
+        height: 24rem;
+        border-radius: 2rem;
+
+    }
+    h3{
+        text-transform: uppercase;
+
+    }
+    
+}
+
+@include tablet{
+    .iconos-nosotros{
+        @include grid(3, 2rem);
+    }
+}
+.iconos-nosotros{
+    border-top: 4rem solid transparent;
+
+}
+ 
+.icono{
+    border-style: solid; border-width: 1px;
+    border-color: #C9D0D5 ;
+    border-radius: 2rem;
+    text-align: center;
+    border-top: .5rem solid #667eea;
+    box-shadow: 0 0 3pxrgba(0,0,0, .5);
+    display: flex;
+    flex-direction:column;
+    align-items:center;  
+    //padding: 2rem;  
+    svg{
+        height: 5rem;
+        padding:0.2rem;
+        background-color: #2156C9;
+        margin-top:1.5rem;
+        width: 7rem;
+        height:7rem;
+        border-radius:50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    h3{
+        text-transform: uppercase;
+        margin: 1rem;
+        color:$black;
+        font-weight: $bold;
+    }
+
+    &:nth-last-of-type(1){
+        grid-area: card1;
+    }
+    &:nth-last-of-type(2){
+        grid-area: card2;
+    }
+    &:nth-last-of-type(3){
+        grid-area: card3;
+    }
+    &:nth-last-of-type(4){
+        grid-area: card4;
+    }
+}
+
+@include tablet{
+    .iconos-nosotros{
+        @include grid(3, 2rem);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        ".        card1    .     "
+        "card2    card1    card3" 
+        "card2    card4    card3"
+        " .       card4    .    " ;
+    
+    }
+}
