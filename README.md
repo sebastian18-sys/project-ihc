@@ -22,3 +22,6 @@ ubicarse en el proyecto clonado
 
 -> git push origin main
 
+
+
+-> ESTO ES UN PASO MALICIOSO
