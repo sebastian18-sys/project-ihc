@@ -22,3 +22,5 @@ ubicarse en el proyecto clonado
 
 -> git push origin main
 
+-> *Recomendación: Antes de usar DE MODIFICAR TU ARCHIVO usar git pull origin main. Esto con el fin de traerte las últimas actualizaciones
+
