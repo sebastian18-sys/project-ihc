@@ -24,10 +24,11 @@ ubicarse en el proyecto clonado
 
 - CONFE
 
--> ESTO ES UN PASO MALICIOSO
--> \*Recomendación: Antes de usar DE MODIFICAR TU ARCHIVO usar git pull origin main. Esto con el fin de traerte las últimas actualizaciones
 
-asdasdasd123
+-> \*Recomendación: 
+
+Antes de usar DE *MODIFICAR TU ARCHIVO* usar -> git pull origin main. Esto con el fin de traerte las últimas actualizaciones
 
 Aqui dejo mi huellita,segundo intento para dejar la huellita
 Aqui dejo mi huella DanDragon
+Aquí deje mi huella X2
