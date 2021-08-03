@@ -30,5 +30,5 @@ ubicarse en el proyecto clonado
 Antes de usar DE *MODIFICAR TU ARCHIVO* usar -> git pull origin main. Esto con el fin de traerte las últimas actualizaciones
 
 Aqui dejo mi huellita,segundo intento para dejar la huellita
-Aqui dejo mi huella DanDragon
+Aqui dejo mi huella DanDragon01 :v
 Aquí deje mi huella X2
