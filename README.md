@@ -39,5 +39,3 @@ ubicarse en el proyecto clonado
 -> \*Recomendación: 
 
 Antes de usar DE *MODIFICAR TU ARCHIVO* usar -> git pull origin main. Esto con el fin de traerte las últimas actualizaciones
-
-
