@@ -1,5 +1,5 @@
 
 USUARIO:
 admin
-CONTRASEÑA:
+CONTRASEï¿½A:
 admin
