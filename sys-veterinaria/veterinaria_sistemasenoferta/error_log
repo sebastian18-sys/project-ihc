@@ -1,0 +1,4 @@
+[08-May-2019 12:30:09 America/Mexico_City] PHP Warning:  move_uploaded_file(subir_us/coca personal.jpg): failed to open stream: No such file or directory in /home/fuseygjj/recetadecocina.net/peluqueria/usuario_cliente_add.php on line 62
+[08-May-2019 12:30:09 America/Mexico_City] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpxzt0Ox' to 'subir_us/coca personal.jpg' in /home/fuseygjj/recetadecocina.net/peluqueria/usuario_cliente_add.php on line 62
+[08-May-2019 12:31:36 America/Mexico_City] PHP Warning:  move_uploaded_file(subir_us/apple.jpg): failed to open stream: No such file or directory in /home/fuseygjj/recetadecocina.net/peluqueria/usuario_cliente_add.php on line 62
+[08-May-2019 12:31:36 America/Mexico_City] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpJGAH0V' to 'subir_us/apple.jpg' in /home/fuseygjj/recetadecocina.net/peluqueria/usuario_cliente_add.php on line 62
