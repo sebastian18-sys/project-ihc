@@ -1,5 +1,0 @@
-
-USUARIO:
-admin
-CONTRASEÑA:
-admin
