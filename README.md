@@ -1,6 +1,17 @@
 # project-ihc
 
-Avances proyecto IHC
+Tomar en cuenta las siguientes indicaciones
+
+
+# Instancia de la base de datos (MySQL)
+
+Crear una nueva conexión en MySQL colocando los siguientes datos
+
+- Connection Name: proyecto
+- Hostname: base-datos-proyecto.cwspvo6flss8.us-east-2.rds.amazonaws.com
+- Username: admin
+- Password: adminadmin
+
 
 # Flujo
 
@@ -29,6 +40,4 @@ ubicarse en el proyecto clonado
 
 Antes de usar DE *MODIFICAR TU ARCHIVO* usar -> git pull origin main. Esto con el fin de traerte las últimas actualizaciones
 
-Aqui dejo mi huellita,segundo intento para dejar la huellita
-Aqui dejo mi huella DanDragon
-Aquí deje mi huella X2
+
