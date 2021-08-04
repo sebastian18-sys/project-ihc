@@ -585,37 +585,48 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
+  padding: 0;
+  /* height: 100%; */
+}
+
+.breadcrumbs .breadcrumb-hero {
+  text-align: center;
+  background: #1977cc;
   padding: 20px 0;
-  background-color: #f1f7fd;
-  min-height: 40px;
-  margin-top: 120px;
+  color: #fff;
+  /* height: 100%; */
 }
 
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 63px;
-  }
+.breadcrumbs .breadcrumb-hero .container {
+  height: 250px;
+  /* align-items: center; */
+  /* padding: auto; */
+  margin: 100px auto;
 }
 
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
+.breadcrumbs .breadcrumb-hero h2 {
+  font-size: 50px;
+  font-weight: 500;
+  padding-bottom: 20px;
 }
 
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
+.breadcrumbs .breadcrumb-hero p {
+  font-size: 25px;
+  margin-bottom: 0;
 }
 
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  font-size: 25px;
   padding: 0;
-  margin: 0;
-  font-size: 14px;
+  margin: 30px 0;
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li a {
+  color: #1977cc;
 }
 
 .breadcrumbs ol li + li {
@@ -625,20 +636,8 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #6c757d;
+  color: #000;
   content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1455,15 +1454,32 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 900px) {
+  .contact .info {
+    flex-direction: column;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    align-items: flex-start;
+  }
+  .contact .info .email, .contact .info .phone, .contact .info .address {
+    margin: 20px 0;
+  }
 }
 
 .contact .info i {
   font-size: 20px;
   color: #1977cc;
   float: left;
-  width: 44px;
-  height: 44px;
-  background: #d6e9fa;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1476,18 +1492,18 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #2c4964;
+  color: #000;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #4b7dab;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .contact .info .email, .contact .info .phone {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
@@ -1502,14 +1518,6 @@ section {
 
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
 }
 
 .contact .php-email-form .error-message {
@@ -1569,16 +1577,18 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
+  /* background: #94c045; */
   background: #1977cc;
-  border: 0;
-  padding: 10px 35px;
+  border: 0;  
+  padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #1c84e3;
+  /* background: #aacd6b; */
+  background: #4b7dab;
 }
 
 @-webkit-keyframes animate-loading {
