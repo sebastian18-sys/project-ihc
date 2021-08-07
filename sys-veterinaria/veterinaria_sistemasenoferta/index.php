@@ -1,9 +1,3 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
+    <!-- FONT -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     
     <!-- Font Awesome -->
@@ -52,7 +47,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
     <!-- https://sistemasenoferta.blogspot.com/ -->
     <div class="head-login">
-    <h2>Bienvenidos al Sistema Hospitalario</h2>
+        <h2>Bienvenidos al Sistema Hospitalario</h2>
     </div>
     <div class=" w3l-login-form">
         <h2>Login </h2>

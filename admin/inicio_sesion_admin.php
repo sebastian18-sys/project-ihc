@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <title>Login - <?php include('dist/includes/title.php');?></title>
+  <!-- <title>Login - <?php include('dist/includes/title.php');?></title> -->
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sys-veterinaria/veterinaria_sistemasenoferta/bootstrap/css/bootstrap.min.css">
     
     <!-- Font Awesome -->
     <!-- Theme style -->
@@ -17,7 +20,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="sys-veterinaria/dist/css/skins/_all-skins.min.css">
-    <title>Sistema de veterinaria</title>
+    <title>Sistema Hospitalario</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +28,7 @@
     />
     <!-- /meta tags -->
     <!-- custom style sheet -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <!-- /custom style sheet -->
     <!-- fontawesome css -->
     <link href="css/fontawesome-all.css" rel="stylesheet" />
@@ -41,9 +44,10 @@
 </head>
 
 <body>
-    <center>
-    <h2 style="color:white;">https://sistemasenoferta.blogspot.com/</h2>
-    </center>
+    <!-- https://sistemasenoferta.blogspot.com/ -->
+    <div class="head-login">
+        <h2>Bienvenidos al Sistema Hospitalario</h2>
+    </div>
     <div class=" w3l-login-form">
         <h2>Login </h2>
     <form action="validar_inicio_sesion.php" method="POST">
@@ -52,18 +56,18 @@
                 <label>Usuario:</label>
                 <div class="group">
                     <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Usuario"  name="Usuario"  required="required" value="admin" />
+                    <input type="text" class="form-control" placeholder="Usuario"  name="Usuario"  required="required"/>
                 </div>
             </div>
             <div class=" w3l-form-group">
-                <label>Password:</label>
+                <label>Contraseña:</label>
                 <div class="group">
                     <i class="fas fa-unlock"></i>
-                    <input type="password" class="form-control" placeholder="Password" name="Password"  required="required" value="admin" />
+                    <input type="password" class="form-control" placeholder="Contraseña" name="Password"  required="required"/>
                 </div>
             </div>
             <div class="forgot">
-                <a href="https://sistemasenoferta.blogspot.com/">CATALOGO SISTEMAS AQUI?</a>
+                <p>No tienes cuenta? <strong><a href="./register.php">Registrese aquí</a></strong> </p>
                 <p><input type="checkbox">Recordar password</p>
             </div>
             <Input  class="btn btn-success" name= "iniciar_sesion" Type = "submit" value = "Iniciar Sesión"> 
@@ -71,12 +75,12 @@
     </form>
  
     </div>
-       <footer>
+       <!-- <footer>
           <div class="pull-right">
                              <a href="https://sistemasenoferta.blogspot.com/">veterinariaACSDASCDAD</a>
           </div>
           <div class="clearfix"></div>
-        </footer>
+        </footer> -->
 
 
 
