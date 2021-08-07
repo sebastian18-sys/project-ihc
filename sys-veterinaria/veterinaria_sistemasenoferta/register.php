@@ -52,10 +52,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
     <!-- https://sistemasenoferta.blogspot.com/ -->
     <div class="head-login">
-    <h2>Bienvenidos al Sistema Hospitalario</h2>
+    <h2>Crear cuenta</h2>
     </div>
     <div class=" w3l-login-form">
-        <h2>Login </h2>
+        <h2>Registro</h2>
     <form action="login.php" method="post">
 
             <div class=" w3l-form-group">
@@ -66,6 +66,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
             <div class=" w3l-form-group">
+                <label>Correo:</label>
+                <div class="group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" class="form-control" placeholder="Correo" name="email"  required="required" />
+                </div>
+            </div>
+            <div class=" w3l-form-group">
                 <label>Constraseña:</label>
                 <div class="group">
                     <i class="fas fa-unlock"></i>
@@ -73,10 +80,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
             <div class="forgot">
-                <p>No tienes cuenta? <strong><a href="./register.php">Registrese aquí</a></strong> </p>
-                <p><input type="checkbox">Recordar password</p>
+                <!-- <p>No tienes cuenta? <strong><a href="">Registrese aquí</a></strong> </p> -->
+                <p><input type="checkbox">Acepto los términos y condiciones</p>
             </div>
-            <button type="submit" name="login">Login</button>
+            <button type="submit" name="sign in">Crear cuenta</button>
     
         </form>
  
