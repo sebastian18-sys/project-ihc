@@ -67,10 +67,11 @@
                 </div>
             </div>
             <div class="forgot">
-                <p>No tienes cuenta? <strong><a href="./register.php">Registrese aquí</a></strong> </p>
+                <!-- <p>No tienes cuenta? <strong><a href="./register.php">Registrese aquí</a></strong> </p> -->
                 <p><input type="checkbox">Recordar password</p>
             </div>
-            <Input  class="btn btn-success" name= "iniciar_sesion" Type = "submit" value = "Iniciar Sesión"> 
+            <Input  class="btn btn-success" name= "iniciar_sesion" Type = "submit" value = "Iniciar Sesión">
+            <a href="./register.php"><input class="button" Type="button" value="Si no tienes una cuenta regístrate"></a> 
     
     </form>
  
