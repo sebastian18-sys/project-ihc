@@ -1,11 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/desarrollo.jpg) no-repeat 0px 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/img/pexels-pixabay-40568.jpg");
     min-height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Raleway', sans-serif;
 }
+
+.head-login {
+    margin: 40px 0;
+}
+
+.head-login h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+
 h1 {
     margin: 0;
     color: #ffffff;
@@ -18,7 +31,7 @@ h1 {
 
 h2 {
     margin: 0;
-    color: #fc3955;
+    color: #1977cc;
     font-size: 25px;
     font-weight: 400;
     text-align: center;
@@ -49,7 +62,7 @@ p.w3l-register-p {
 }
 
 .group i {
-    color: #fc3955;
+    color: #1977c5;
     font-size: 20px;
     padding: 0 10px;
 }
@@ -83,7 +96,7 @@ input[type="password"]:focus {
 }
 
 button {
-    background: #fc3955;
+    background: #1977cc;
     color: #ffffff;
     font-size: 13px;
     text-transform: uppercase;
