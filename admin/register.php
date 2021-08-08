@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- /custom style sheet -->
     <!-- fontawesome css -->
-    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- /fontawesome css -->
     <!-- google fonts-->
     <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
