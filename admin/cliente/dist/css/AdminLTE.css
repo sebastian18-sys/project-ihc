@@ -1443,39 +1443,43 @@ a:focus {
  * --------------------
  */
 .small-box {
-  border-radius: 2px;
+  border-radius: 12px;
   position: relative;
   display: block;
   margin-bottom: 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .small-box > .inner {
-  padding: 10px;
+  padding: 20px 30px;
+  font-size: 40px;
 }
+
 .small-box > .small-box-footer {
   position: relative;
   text-align: center;
-  padding: 3px 0;
+  padding: 13px 0;
   color: #fff;
   color: rgba(255, 255, 255, 0.8);
   display: block;
   z-index: 10;
   background: rgba(0, 0, 0, 0.1);
   text-decoration: none;
+  font-size: 17px;
 }
 .small-box > .small-box-footer:hover {
   color: #fff;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.2);
+  transition: 500ms;
 }
 .small-box h3 {
-  font-size: 38px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 500;
   margin: 0 0 10px 0;
   white-space: nowrap;
   padding: 0;
 }
 .small-box p {
-  font-size: 15px;
+  font-size: 20px;
 }
 .small-box p > small {
   display: block;
@@ -1716,6 +1720,8 @@ a:focus {
   display: block;
   padding: 10px;
   position: relative;
+  text-align: center;
+  
 }
 .box-header.with-border {
   border-bottom: 1px solid #f4f4f4;
@@ -1728,9 +1734,10 @@ a:focus {
 .box-header > .ion,
 .box-header .box-title {
   display: inline-block;
-  font-size: 18px;
+  font-size: 38px;
   margin: 0;
   line-height: 1;
+  letter-spacing: 5px;
 }
 .box-header > .fa,
 .box-header > .glyphicon,
@@ -1773,9 +1780,15 @@ a:focus {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
+
 .box-body > .table {
   margin-bottom: 0;
+  border-bottom: 2px solid #1977cc;
+  background-color: #f4f5fa;
+  text-align: center;
+  font-size: 17px;
 }
+
 .box-body .fc {
   margin-top: 5px;
 }

@@ -1,17 +1,14 @@
  <?php //include '../layout/session.php';?> 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PELUQUERIA sistemasenoferta</title>
+    <title>Sistema Medilab</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -29,8 +26,8 @@
 
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
-                <script type="text/javascript" src="js2/jquery.js"></script>
-        <script type="text/javascript" src="js2/chartJS/Chart.min.js"></script>
+    <script type="text/javascript" src="js2/jquery.js"></script>
+    <script type="text/javascript" src="js2/chartJS/Chart.min.js"></script>
 	<style>
 		 h5,h6{
         text-align:center;
@@ -58,9 +55,4 @@
       }
 	
 	</style>
-	
-	
-	<!---dataTable--->
-	
-	<?php //include 'dbcon.php';?>
-  </head>
+</head>

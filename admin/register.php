@@ -57,7 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <div class=" w3l-login-form">
         <h2>Registro</h2>
-    <form action="login.php" method="post">
+    <form action="validar_registro.php" method="post">
 
             <div class=" w3l-form-group">
                 <label>DNI:</label>
@@ -106,7 +106,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <p><input type="checkbox">Acepto los términos y condiciones</p>
             </div>
             <!-- <button type="submit" name="sign in">Crear cuenta</button> -->
-            <input type="submit" name="sign in" class="button" value="Registrar">
+            <input type="submit" name="sign_in" class="button" value="Registrar">
     
         </form>
  
