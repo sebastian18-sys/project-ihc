@@ -1,5 +1,12 @@
 <?php include 'header.php';
 //$branch_id = $_GET['id'];
+  session_start();
+  error_reporting(0);
+  $varsesion=$_SESSION['var_user'];
+
+  if($varsesion==null||$varsesion==''){
+    header('Location: ../inicio_sesion_admin.php');
+  }
 ?>
 
 <!-- Font Awesome -->

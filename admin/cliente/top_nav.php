@@ -1,7 +1,9 @@
 <?php
-  $caja_cont=2;
-  $acumulado=0;
-
+  // $caja_cont=2;
+  // $acumulado=0;
+  // session_start();
+  // error_reporting(0);
+  // $varsesion=$_SESSION['var_user'];
 //     $caja_query=mysqli_query($con,"select * from caja where estado='abierto' ")or die(mysqli_error());
 //     $i=0;
 //     while($row_caja=mysqli_fetch_array($caja_query)){
@@ -9,7 +11,9 @@
 //       $acumulado=$row_caja['monto'];
 //     }
 // if ($caja_cont==0) {
-
+  // if($varsesion==null||$varsesion==''){
+  //   header('Location: ../inicio_sesion_admin.php');
+  // }
 // }
 ?>
 
@@ -25,7 +29,8 @@
         <li class=""> <!-- USER -->
           <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <!-- DESPLEGABLE -->
             <!-- <img src="usuario/subir_us/5.jpg" alt=""> -->
-            <p class="user-system">sebastian99_19@hotmail.com</p> <!-- USUARIO PHP CON SESSION -->
+            <!-- <p class="user-system">sebastian99_19@hotmail.com</p>  -->
+            <p class="user-system"> <?php echo $_SESSION['var_user']?> </p>
             <i class="fa fa-user" aria-hidden="true"></i>
             <span class=" fa fa-angle-down"></span>
           </a>
