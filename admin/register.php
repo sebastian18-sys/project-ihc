@@ -19,7 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
     <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="../sys-veterinaria/veterinaria_sistemasenoferta/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../sys-veterinaria/veterinaria_sistemasenoferta/bootstrap/css/bootstrap.min.css"> -->
     
     <!-- Font Awesome -->
     <!-- Theme style -->
@@ -60,10 +60,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <form action="login.php" method="post">
 
             <div class=" w3l-form-group">
-                <label>Usuario:</label>
+                <label>DNI:</label>
+                <div class="group">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" class="form-control" placeholder="DNI"  name="dni"  required="required" />
+                </div>
+            </div>
+            <div class=" w3l-form-group">
+                <label>Nombres:</label>
                 <div class="group">
                     <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Usuario"  name="username"  required="required" />
+                    <input type="text" class="form-control" placeholder="Nombres"  name="nombres"  required="required" />
+                </div>
+            </div>
+            <div class=" w3l-form-group">
+                <label>Apellidos:</label>
+                <div class="group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" placeholder="Apellidos"  name="apellidos"  required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">
@@ -71,6 +85,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="group">
                     <i class="fas fa-envelope"></i>
                     <input type="email" class="form-control" placeholder="Correo" name="email"  required="required" />
+                </div>
+            </div>
+            <div class=" w3l-form-group">
+                <label>Celular:</label>
+                <div class="group">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" class="form-control" placeholder="Celular" name="celular"  required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">

@@ -53,10 +53,10 @@
     <form action="validar_inicio_sesion.php" method="POST">
 
             <div class=" w3l-form-group">
-                <label>Usuario:</label>
+                <label>DNI:</label>
                 <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Usuario"  name="Usuario"  required="required"/>
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" class="form-control" placeholder="DNI"  name="Dni"  required="required"/>
                 </div>
             </div>
             <div class=" w3l-form-group">

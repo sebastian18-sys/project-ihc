@@ -25,6 +25,9 @@ $tipo = "administrador";
 
       <!-- CAJA -->
       <li><a href = "caja.php"><i class="fa fa-file-text-o"></i> Diagnóstico <span class="fa fa-chevron-right"></span></a></li>
+
+      <!-- CAJA -->
+      <li><a href = "caja.php"><i class="fa fa-medkit"></i> Asegurado <span class="fa fa-chevron-right"></span></a></li>
       
       <!-- USUARIOS -->
       <!-- <?php if ($tipo=="administrador" ) { ?>

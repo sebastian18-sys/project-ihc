@@ -91,7 +91,7 @@
 
 
 .left_col {
-  background: #2A3F54; }
+  background: #2c4964; }
 
 .nav-sm .container.body .col-md-3.left_col {
   min-height: 100%;
@@ -302,7 +302,7 @@ body .container.body .right_col {
 .nav_title {
   width: 230px;
   float: left;
-  background: #2A3F54;
+  background: #2c4964;
   border-radius: 0;
   height: 57px; }
 
@@ -1524,7 +1524,7 @@ span.right {
   padding: 5px 0 0 0;
   position: fixed;
   width: 230px;
-  background: #2A3F54; }
+  background: #2c4964; }
 
 .sidebar-footer a {
   padding: 7px 0 3px;
