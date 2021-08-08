@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <meta http-equiv="Pragma" content="no-cache">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <title>Login - <?php include('dist/includes/title.php');?></title> -->
+  
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -29,7 +29,7 @@
     />
     <!-- /meta tags -->
     <!-- custom style sheet -->
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" />
     <!-- /custom style sheet -->
     <!-- fontawesome css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">

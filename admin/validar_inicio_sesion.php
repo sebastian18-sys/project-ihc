@@ -15,7 +15,7 @@ if (isset($_POST['iniciar_sesion'])) {
     
     
     // descifrado    
-    if($row['dni']== $usuario_global &&  $row['password']==$contrasena && $usuario_global != null && $contrasena!= null && $row['usuario'] != "123" && $row['password'] != "123" ){
+    if($row['dni']== $usuario_global &&  $row['password']==$contrasena && $usuario_global != null && $contrasena!= null && $row['dni'] != "123" && $row['password'] != "123" ){
 
         $_SESSION['var_user'] = $row['correo'];
         //$_SESSION['usuario-login-activo'] = $row['usuario'];
