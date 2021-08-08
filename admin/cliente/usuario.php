@@ -19,19 +19,19 @@
         <!-- top navigation -->
        <?php include 'top_nav.php';?>      <!-- /top navigation -->
        <style>
-label{
+        label{
 
-color: black;
-}
-li {
-  color: white;
-}
-ul {
-  color: white;
-}
-#buscar{
-  text-align: right;
-}
+        color: black;
+        }
+        li {
+          color: white;
+        }
+        ul {
+          color: white;
+        }
+        #buscar{
+          text-align: right;
+        }
        </style>
 
         <!-- page content -->

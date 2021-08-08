@@ -1780,9 +1780,15 @@ a:focus {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
+
 .box-body > .table {
   margin-bottom: 0;
+  border-bottom: 2px solid #1977cc;
+  background-color: #f4f5fa;
+  text-align: center;
+  font-size: 17px;
 }
+
 .box-body .fc {
   margin-top: 5px;
 }

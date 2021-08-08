@@ -4,9 +4,9 @@
   error_reporting(0);
   $varsesion=$_SESSION['var_user'];
 
-  if($varsesion==null||$varsesion==''){
-    header('Location: ../inicio_sesion_admin.php');
-  }
+  // if($varsesion==null||$varsesion==''){
+  //   header('Location: ../inicio_sesion_admin.php');
+  // }
 ?>
 
 <!-- Font Awesome -->
