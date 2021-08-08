@@ -5,208 +5,131 @@
 <?php
 $tipo = "administrador";
 ?>
+
 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <h3>EMPRESA</h3>
-                <ul class="nav side-menu">
-                      <li><a href = "inicio.php"><i class="fa fa-dashboard"></i> inicio <span class="fa fa-chevron-right"></span></a></li>
+  <div class="menu_section">
+    <h3>Servicios</h3>
+    <ul class="nav side-menu">
+      
+      <!-- INICIO -->
+      <li><a href = "inicio.php"><i class="fa fa-home"></i> inicio <span class="fa fa-chevron-right"></span></a></li>
 
-                   
-                     
-   <li><a href = "caja.php"><i class="fa fa-bank"></i> Caja <span class="fa fa-chevron-right"></span></a></li>
-                                  <?php
-                      if ($tipo=="administrador" ) {
-                    
-                      ?>
-                 <li><a><i class="fa fa-group"></i> Usuarios<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
+      <!-- CAJA -->
+      <li><a href = "caja.php"><i class="fa fa-calendar"></i> Reservar Cita <span class="fa fa-chevron-right"></span></a></li>
 
-                      <li><a href="../usuario/usuario.php">Usuarios</a></li>
+      <!-- CAJA -->
+      <li><a href = "caja.php"><i class="fa fa-calendar"></i> Próximas Citas <span class="fa fa-chevron-right"></span></a></li>
 
-                                  <li><a href="../usuario/usuario_agregar.php">Agregar</a></li> 
+      <!-- CAJA -->
+      <li><a href = "caja.php"><i class="fa fa-bed"></i> Camas UCI <span class="fa fa-chevron-right"></span></a></li>
 
-                    </ul>
-                  </li>
-                            <li><a><i class="fa fa-user-md"></i> Mascota /Cliente<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
+      <!-- CAJA -->
+      <li><a href = "caja.php"><i class="fa fa-file-text-o"></i> Diagnóstico <span class="fa fa-chevron-right"></span></a></li>
+      
+      <!-- USUARIOS -->
+      <!-- <?php if ($tipo=="administrador" ) { ?>
+      <li>
+        <a><i class="fa fa-group"></i> Usuarios<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../usuario/usuario.php">Usuarios</a></li>
+          <li><a href="../usuario/usuario_agregar.php">Agregar</a></li> 
+        </ul>
+      </li> -->
+      
+      <!-- MASCOTA / CLIENTE -->
+      <!-- <li>
+        <a><i class="fa fa-user-md"></i> Mascota /Cliente<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../cliente/cliente.php">Mascota /Cliente</a></li>
+          <li><a href="cliente_agregar.php">Agregar</a></li>
+          <li><a href="cliente_historial.php">Historial</a></li>
+        </ul>
+      </li>
+      <?php } ?> -->
+      
+      <!-- PRODUCTOS -->
+      <!-- <?php if ($tipo=="administrador" or $tipo=="empleado") { ?>
+      <li>
+        <a><i class="fa fa-database"></i> Productos<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../producto/producto.php">Producto</a></li>
+        </ul>
+      </li>
+      <?php } ?> -->
 
-                      <li><a href="../cliente/cliente.php">Mascota /Cliente</a></li>
-   <li><a href="cliente_agregar.php">Agregar</a></li>
-      <li><a href="cliente_historial.php">Historial</a></li>
-                       
+      <!-- HISTORIAL -->
+      <!-- <?php if ($tipo=="administrador" or $tipo=="empleado" ) { ?>
+      <li><a href = "../cliente/cliente_historial.php"><i class="fa fa-retweet"></i>Historial<span class="fa fa-chevron-right"></span></li></a>
+      <?php } if ($tipo=="administrador") { ?>
+      <?php } if ($tipo=="administrador" or $tipo=="empleado" ) { ?> -->
+      
+      <!-- VENTAS POS -->
+      <!-- <li><a><i class="fa fa-money"></i> Ventas POS<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../ventas/pos.php">Ventas productos</a></li>
+          <li><a href="../ventas_servicios/servicios_agregar.php">Ventas Servicios</a></li> 
+        </ul>
+      </li>
+      <?php } ?> -->
 
-                    </ul>
-                  </li>
+      <!-- VENTAS REALIZADAS -->
+      <!-- <?php if ($tipo=="administrador" or $tipo=="empleado") { ?>
+      <li><a><i class="fa fa-bar-chart"></i> Ventas realizadas<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../reportes_servicios/ventas_servicios_totales.php">Servicios</a></li>
+          <li><a href="../reportes/ventas_productos_totales.php">Productos</a></li> 
+        </ul>
+      </li>
+      <?php } if ($tipo=="administrador") { ?> -->
 
-             <?php
-                      }
-                      ?>
+      <!-- REPORTES VENTAS SERVICIOS -->
+      <!-- <li><a><i class="fa fa-bar-chart"></i> Reportes Ventas servicios<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../reportes_servicios/reportes_por_fecha_servicios.php">Entre fechas</a></li>
+          <li><a href="../reportes_servicios/reportes_por_dia_servicios.php">Por dia</a></li> 
+          <li><a href="../reportes_servicios/reportes_por_mes_servicios.php">Por mes</a></li> 
+          <li><a href="../reportes_servicios/reportes_ultimos_7dias_servicios.php">Ultimos 7 dias</a></li> 
+        </ul>
+      </li> -->
 
-                              <?php
-                      if ($tipo=="administrador" or $tipo=="empleado") {
-                    
-                      ?>
-                 <li><a><i class="fa fa-database"></i> Productos<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-
-                      <li><a href="../producto/producto.php">Producto</a></li>
-
-              
-
-                    </ul>
-                  </li>
-
-             <?php
-                      }
-                      ?>
-                      
-
-
-          <?php
-                      if ($tipo=="administrador" or $tipo=="empleado" ) {
-                    
-                      ?>
-
-
-                   
-
-                              <li><a href = "../cliente/cliente_historial.php"><i class="fa fa-retweet"></i>Historial<span class="fa fa-chevron-right"></span></li></a>
-                       
-
-                                    <?php
-                      }
-     if ($tipo=="administrador") {
-
-                      ?>
-
-
-
-
-
-                               <?php
-                              }
-                      if ($tipo=="administrador" or $tipo=="empleado" ) {
-                    
-                      ?>
-
-                                       <li><a><i class="fa fa-money"></i> Ventas POS<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-
-                      <li><a href="../ventas/pos.php">Ventas productos</a></li>
-                      <li><a href="../ventas_servicios/servicios_agregar.php">Ventas Servicios</a></li> 
-          
-   
-                    </ul>
-                  </li>
-
-
-
-                   
-
-              
-
-                                    <?php
-                      }
-                      ?>
-
- 
-                                                              <?php
-                      if ($tipo=="administrador" or $tipo=="empleado") {
-                    
-                      ?>
-                                       <li><a><i class="fa fa-bar-chart"></i> Ventas realizadas<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-
-                      <li><a href="../reportes_servicios/ventas_servicios_totales.php">Servicios</a></li>
-   
-                     <li><a href="../reportes/ventas_productos_totales.php">Productos</a></li> 
-     
-                    </ul>
-                  </li>
-                  <?php
-                      }
-
-                       if ($tipo=="administrador") {
-                      ?>
-
-                 <li><a><i class="fa fa-bar-chart"></i> Reportes Ventas servicios<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-
-                      <li><a href="../reportes_servicios/reportes_por_fecha_servicios.php">Entre fechas</a></li>
-                      <li><a href="../reportes_servicios/reportes_por_dia_servicios.php">Por dia</a></li> 
-                     <li><a href="../reportes_servicios/reportes_por_mes_servicios.php">Por mes</a></li> 
-      <li><a href="../reportes_servicios/reportes_ultimos_7dias_servicios.php">Ultimos 7 dias</a></li> 
-                    </ul>
-                  </li>
-
-     
+      <!-- REPORTES VENTAS PRODUCTOS -->
+      <!-- <li><a><i class="fa fa-bar-chart"></i> Reportes Ventas productos<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../reportes/reportes_por_fecha.php">Entre fechas</a></li>
+          <li><a href="../reportes/reportes_por_dia.php">Por dia</a></li> 
+          <li><a href="../reportes/reportes_por_mes.php">Por mes</a></li> 
+          <li><a href="../reportes/reportes_ultimos_7dias.php">Ultimos 7 dias</a></li> 
+        </ul>
+      </li>
+      <?php } ?> -->
 
 
-                 <li><a><i class="fa fa-bar-chart"></i> Reportes Ventas productos<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-
-                      <li><a href="../reportes/reportes_por_fecha.php">Entre fechas</a></li>
-                      <li><a href="../reportes/reportes_por_dia.php">Por dia</a></li> 
-                     <li><a href="../reportes/reportes_por_mes.php">Por mes</a></li> 
-      <li><a href="../reportes/reportes_ultimos_7dias.php">Ultimos 7 dias</a></li> 
-                    </ul>
-                  </li>
-             <?php
-                      }
-                      ?>
-
+      <!-- CONFIGURACIÓN -->
+      <!-- <li><a><i class="fa fa-gear"></i>Configuracion<span class="fa fa-chevron-s"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../usuario/editar_usuario_password.php">Cambiar Contraseña</a></li>
+          <?php if ($tipo=="administrador" ) { ?>
+          <li><a href="../configuracion/configuracion.php">Configuracion</a></li>
+          <li><a href="../config_frond_end/configuracion.php">Frond end</a></li>
+          <li><a href="../config_frond_end/galeria.php">Galeria Frond end</a></li>
+          <?php } ?>
+        </ul>
+      </li> -->
 
 
+      <!-- BASE DE DATOS -->
+      <!-- <?php if ($tipo=="administrador" ) { ?>
+      <li><a><i class="fa fa-database"></i> Base de datos<span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+          <li><a href="../otros/vaciar_bd.php" onClick="return confirm('¿Está seguro de que quieres vaciar la base de datos ??');">Vaciar base de datos</a></li>
+          <li><a href="../otros/respaldo_add.php">Respaldo</a></li>
+        </ul>
+      </li>
+      <?php } ?> -->
     
-
-   
-
-
-
-
-
-         
-                 <li><a><i class="fa fa-gear"></i>Configuracion<span class="fa fa-chevron-s"></span></a>
-                    <ul class="nav child_menu">
-
-
-                      <li><a href="../usuario/editar_usuario_password.php">Cambiar Contraseña</a></li>
-                                                                        <?php
-                      if ($tipo=="administrador" ) {
-                    
-                      ?>
-                          <li><a href="../configuracion/configuracion.php">Configuracion</a></li>
-
-                           <li><a href="../config_frond_end/configuracion.php">Frond end</a></li>
-                            <li><a href="../config_frond_end/galeria.php">Galeria Frond end</a></li>
-                                 <?php
-                      }
-                      ?>
-
-                    </ul>
-                  </li>
-
-
-
-                             <?php
-                      if ($tipo=="administrador" ) {
-                    
-                      ?>
-
-                     <li><a><i class="fa fa-database"></i> Base de datos<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-
-                      <li><a href="../otros/vaciar_bd.php" onClick="return confirm('¿Está seguro de que quieres vaciar la base de datos ??');">Vaciar base de datos</a></li>
-       
-                       <li><a href="../otros/respaldo_add.php">Respaldo</a></li>
-
-                    </ul>
-                  </li>
-             <?php
-                      }
-                      ?>
-
-              </div>
+    </ul>
+  
+  </div>
              <!--- <div class="menu_section">
                 <h3>Live On</h3>
                 <ul class="nav side-menu">
@@ -250,4 +173,4 @@ $tipo = "administrador";
                 </ul>
               </div>--->
 
-            </div>
+</div>

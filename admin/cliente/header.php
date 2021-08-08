@@ -10,8 +10,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
 
-    <title>PELUQUERIA sistemasenoferta</title>
+    <title>Sistema Hospitalarios</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -29,8 +31,9 @@
 
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
-                <script type="text/javascript" src="js2/jquery.js"></script>
-        <script type="text/javascript" src="js2/chartJS/Chart.min.js"></script>
+    <link href="build/css/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="js2/jquery.js"></script>
+    <script type="text/javascript" src="js2/chartJS/Chart.min.js"></script>
 	<style>
 		 h5,h6{
         text-align:center;

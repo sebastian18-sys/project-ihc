@@ -269,7 +269,8 @@
 
 .nav_menu {
   float: left;
-  background: #EDEDED;
+  /* background: #EDEDED; */
+  background: #1977cc;  
   border-bottom: 1px solid #D9DEE4;
   margin-bottom: 10px;
   width: 100%;
@@ -655,7 +656,15 @@ a:hover, a:focus {
   font-weight: 500;
   color: #ECF0F1 !important;
   margin-left: 0 !important;
-  line-height: 32px; }
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-system {
+  margin: 0;
+}
 
 .site_title {
   text-overflow: ellipsis;
@@ -675,7 +684,9 @@ a:hover, a:focus {
   text-decoration: none; }
 
 .nav.navbar-nav > li > a {
-  color: #515356 !important; }
+  color: #fff !important; 
+  font-size: 16px;
+}
 
 .nav.top_menu > li > a {
   position: relative;
@@ -712,7 +723,9 @@ a:hover, a:focus {
   float: left;
   margin: 0;
   padding-top: 16px;
-  width: 70px; }
+  width: 70px; 
+}
+
 
 .toggle a {
   padding: 15px 15px 0;
@@ -720,7 +733,8 @@ a:hover, a:focus {
   cursor: pointer; }
 
 .toggle a i {
-  font-size: 26px; }
+  font-size: 26px; 
+  color: #fff;}
 
 .nav.child_menu > li > a {
   color: rgba(255, 255, 255, 0.75);
