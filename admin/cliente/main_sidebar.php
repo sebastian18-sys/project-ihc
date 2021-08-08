@@ -26,7 +26,7 @@
     <!-- /sidebar menu -->
 
     <!-- /menu footer buttons -->
-    <?php include 'sidebar2.php';?>
+    <?php //include 'sidebar2.php';?>
     <!-- /menu footer buttons -->
   </div>
 </div>

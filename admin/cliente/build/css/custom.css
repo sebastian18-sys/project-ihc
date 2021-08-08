@@ -186,14 +186,14 @@
   margin-bottom: 35px; }
 
 .menu_section h3 {
-  padding-left: 23px;
+  padding-left: 0px;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
   font-weight: bold;
-  font-size: 11px;
-  margin-bottom: 0;
-  margin-top: 0;
+  font-size: 19px;
+  margin: 23px 0;
+  text-align: center;
   text-shadow: 1px 1px #000; }
 
 .menu_section > ul {
@@ -620,7 +620,8 @@ a:hover, a:focus {
 
 .nav.side-menu > li > a, .nav.child_menu > li > a {
   color: #E7E7E7;
-  font-weight: 500; }
+  font-weight: 500;
+  font-size: 15px; }
 
 .nav.child_menu li li:hover,
 .nav.child_menu li li.active {
@@ -670,15 +671,18 @@ a:hover, a:focus {
   text-overflow: ellipsis;
   overflow: hidden;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 35px;
   width: 100%;
+  padding-left: 0px;
   color: #ECF0F1 !important;
   margin-left: 0 !important;
   line-height: 59px;
   display: block;
   height: 55px;
   margin: 0;
-  padding-left: 10px; }
+  text-align: center;
+  letter-spacing: 3px;
+}
 
 .site_title:hover, .site_title:focus {
   text-decoration: none; }
