@@ -5,6 +5,7 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
 <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="dist/css/AdminLTE.css">
 <link rel="stylesheet" href="plugins/select2/select2.min.css">
 
 <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
@@ -70,7 +71,7 @@
                   <div class="inner">
                   
                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <p>RESERVA TU CITA</p>
+                    <h3>RESERVA TU CITA</h3>
                     <p>Reserva tu cita web para HospitalSystem Lima</p>
                   </div>
                   
