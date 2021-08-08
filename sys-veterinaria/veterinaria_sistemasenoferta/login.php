@@ -1,6 +1,7 @@
-<?php session_start();
+<?php
+session_start();
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 	<head>
 		<style type="text/css">
@@ -269,8 +270,9 @@
 
 </body>
 
-</html>
-<?php 
+</html> -->
+
+<?php
 include('dist/includes/dbcon.php');
 
 if(isset($_POST['login']))
@@ -288,8 +290,8 @@ $date = date("Y-m-d H:i:s");
 
 $query=mysqli_query($con,"select * from asegurados where  usuario='$user' and password='$pass1' ")or die(mysqli_error($con));
 	$row=mysqli_fetch_array($query);
-           $id=$row['id'];
-           $name=$row['usuario'];
+           $id=$row['usuario'];
+           $name=$row['password'];
            $counter=mysqli_num_rows($query);
 
     
@@ -302,17 +304,13 @@ $query=mysqli_query($con,"select * from asegurados where  usuario='$user' and pa
 	  } 
 	  elseif ($counter > 0)
 	  {
-	  $_SESSION['id']=$id;	
-	  $_SESSION['name']=$name;		
+	  $_SESSION['usuario']=$id;	
+	  $_SESSION['password']=$name;		
 	  
 
-		$remarks="ha iniciado sesión en el sistema en ";  
-
-
-	
-             
-
-		 echo "<script type='text/javascript'>document.location='pages/layout/inicio.php'</script>";
+		$remarks="ha iniciado sesión en el sistema en "; 
+		header('Location: pages/layout/inicio.php');
+		//echo "<script type='text/javascript'>document.location='sys_veterinaria/pages/layout/inicio.php'</script>";
 	  }
 }	 
 ?>

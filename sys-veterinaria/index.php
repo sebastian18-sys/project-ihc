@@ -228,8 +228,7 @@ $twitter="twitter";
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Ubicacion google maps</h2>
-           <p class="section-heading text-uppercase"><?php echo $direccion;?>
-</p>
+          <p class="section-heading text-uppercase"><?php echo $direccion;?></p>
           <h3 class="section-subheading text-muted"><iframe src="<?php echo $google_maps;?>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>.</h3>
         </div>
       </div>
@@ -342,9 +341,7 @@ $twitter="twitter";
                 <h2 class="text-uppercase"><?php echo $titulo;?>  </h2>
                 <p class="item-intro text-muted"></p>
                 <img class="img-fluid d-block mx-auto" src="img/ima1.jpg" alt="">
-                <p><?php echo $direccion;?> 
-</p>
-
+                <p><?php echo $direccion;?></p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Cerrar</button>
@@ -371,7 +368,7 @@ $twitter="twitter";
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase"><?php echo $titulo;?> </h2>
+                <h2 class="text-uppercase"><?php echo $titulo;?></h2>
   
                 <img class="img-fluid d-block mx-auto" src="img/ima2.jpg" alt="">
                 <p><?php echo $direccion;?> 
