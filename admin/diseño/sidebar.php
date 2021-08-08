@@ -21,7 +21,7 @@ $tipo = "administrador";
                  <li><a><i class="fa fa-group"></i> Usuarios<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
 
-                      <li><a href="../usuario/usuario.php">Usuarios</a></li>
+                      <li><a href="usuario.php">Usuarios</a></li>
 
                                   <li><a href="../usuario/usuario_agregar.php">Agregar</a></li> 
 
