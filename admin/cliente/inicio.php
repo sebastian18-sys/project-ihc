@@ -3,6 +3,7 @@
   session_start();
   error_reporting(0);
   $varsesion=$_SESSION['var_user'];
+  $user=$_SESSION['nombre'];
 
   // if($varsesion==null||$varsesion==''){
   //   header('Location: ../inicio_sesion_admin.php');
@@ -56,7 +57,7 @@
         </div>
 
         <div class="box-header"> <!-- TITULO -->
-          <h3 class="box-title"> Bienvenido</h3>
+          <h3 class="box-title"> Bienvenido <?php echo $_SESSION['nombre']?> </h3>
         </div>
         <!-- /.box-header -->
         
