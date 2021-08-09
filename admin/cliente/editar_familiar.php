@@ -17,9 +17,15 @@
     // $_SESSION['dni_family'] = $row['dni_familiar'];
     // $_SESSION['genero_family'] = $row['genero'];
     // $_SESSION['telefono_family'] = $row['telefono'];
-    
+ 
 
-    include '../../base_datos/db.php'
+    include '../../base_datos/db.php';
+
+    $query2 = "SELECT * FROM familiares";
+    $select = mysqli_query($conn, $query2);
+    while($row = mysqli_fetch_assoc($select)) { 
+        $_SESSION['dni_fa'] = $row['dni_familiar'];
+    }
 ?>
 
 <?php
@@ -27,6 +33,7 @@
 // if  (isset($_GET['dni_familiar'])) {
   $dni_fa=$_SESSION['dni_fa'];
 //   echo $dni_fa;
+//   echo "perro";
   $query = "SELECT * FROM familiares WHERE dni_familiar='$dni_fa'";
   $result = mysqli_query($conn, $query);    
   if (mysqli_num_rows($result) == 1) {
@@ -104,7 +111,7 @@
                 <div class="box-body"><!-- Date range --></div>
 
                 <div class="box-header">
-                    <h3 class="box-title">Registrar Cita</h3>
+                    <h3 class="box-title">Mi familia</h3>
                 </div>
                 <!-- /.box-header -->
                 
@@ -152,7 +159,7 @@
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>DNI:</label>
                                                         <div class="group">
-                                                            <input type="text" class="form-control" placeholder="DNI" name="dni_familia"  required="required" value="<?php echo $dni_fa ?>"/>
+                                                            <input type="text" class="form-control" placeholder="DNI" name="dni_familia" readonly="readonly" required="required" value="<?php echo $dni_fa ?>"/>
                                                         </div>
                                                     </div>
                                                 </div>

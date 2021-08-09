@@ -77,7 +77,7 @@
                                                         <label>DNI:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
-                                                            <input type="text" class="form-control" placeholder="DNI"  name="Dni"  required="required" value="<?php echo $dni ?>"/>
+                                                            <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php echo $dni ?>"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -86,7 +86,7 @@
                                                         <label>Nombres:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
-                                                            <input type="text" class="form-control" placeholder="Nombres"  name="Nombres"  required="required" value="<?php echo $user ?>"/>
+                                                            <input type="text" class="form-control" placeholder="Nombres"  name="Nombres" readonly="readonly"  required="required" value="<?php echo $user ?>"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -95,7 +95,7 @@
                                                         <label>Apellidos:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
-                                                            <input type="text" class="form-control" placeholder="Apellidos"  name="Apellidos"  required="required" value="<?php echo $lastname ?>" />
+                                                            <input type="text" class="form-control" placeholder="Apellidos"  name="Apellidos" readonly="readonly"  required="required" value="<?php echo $lastname ?>" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -104,7 +104,7 @@
                                                         <label>Correo:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
-                                                            <input type="text" class="form-control" placeholder="Correo"  name="Correo"  required="required" value="<?php echo $_SESSION['var_user'] ?>"/>
+                                                            <input type="text" class="form-control" placeholder="Correo"  name="Correo" readonly="readonly"  required="required" value="<?php echo $_SESSION['var_user'] ?>"/>
                                                         </div>
                                                     </div>
                                                 </div> 
@@ -113,7 +113,7 @@
                                                         <label>Teléfono:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
-                                                            <input type="text" class="form-control" placeholder="Teléfono"  name="Telefono"  required="required" value="<?php echo $phone ?>"/>
+                                                            <input type="text" class="form-control" placeholder="Teléfono"  name="Telefono" readonly="readonly"  required="required" value="<?php echo $phone ?>"/>
                                                         </div>
                                                     </div>
                                                 </div> 
@@ -122,7 +122,7 @@
                                                         <label>Seguro:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
-                                                            <input type="text" class="form-control" placeholder="Seguro"  name="Seguro"  required="required" value="<?php echo $insurence ?>"/>
+                                                            <input type="text" class="form-control" placeholder="Seguro"  name="Seguro" readonly="readonly"  required="required" value="<?php echo $insurence ?>"/>
                                                         </div>
                                                     </div>
                                                 </div>   

@@ -90,7 +90,7 @@
                 <div class="box-body"><!-- Date range --></div>
 
                 <div class="box-header">
-                    <h3 class="box-title">Registrar Cita</h3>
+                    <h3 class="box-title">Mi familia</h3>
                 </div>
                 <!-- /.box-header -->
                 
@@ -117,7 +117,7 @@
                                                         <label>DNI:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
-                                                            <input type="text" class="form-control" placeholder="DNI"  name="Dni"  required="required" value="<?php echo $dni ?>"/>
+                                                            <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly"  required="required" value="<?php echo $dni ?>"/>
                                                         </div>
                                                     </div>
                                                 </div>
