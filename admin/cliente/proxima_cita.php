@@ -1,7 +1,10 @@
 <?php include 'header.php'; 
+    
     session_start();
     error_reporting(0);
     $varsesion=$_SESSION['var_user'];
+    $dni=$_SESSION['Dni'];
+    include '../../base_datos/db.php'
 ?>
 
 <!-- Font Awesome -->
@@ -12,6 +15,7 @@
 
 <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
+<html>
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
@@ -58,44 +62,43 @@
                         <div class="box-body">
                             <table ID="example22" class="table table-bordered table-striped shadow-sm dataTable no-footer">
                                 <thead>
-                                    <tr>
-                                        <th>Fecha</th>
-                                        <th>Hora</th>
-                                        <th>Documento</th>
-                                        <th>DNI</th>
-                                        <th>Especialidad</th>
-                                        <th>Responsable</th>
-                                        <th>Estado</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
                                     
-                                                
-                                        // $query=mysqli_query($con,"select * from caja ORDER BY id_caja DESC;")or die(mysqli_error());
-                                        // $i=0;
-                                        // while($row=mysqli_fetch_array($query)){
+                                        <tr>
+                                            <th>Fecha</th>
+                                            <th>Hora</th>
+                                            <th>DNI</th>
+                                            <th>Especialidad</th>
+                                            <th>Responsable</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    
+                                </thead>
+                                
+                                <tbody>
+                              
+                                    <?php
 
+                                    $query = "SELECT * FROM cita WHERE dni = '$dni'";
+                                    $result_tasks = mysqli_query($conn, $query); 
+                                    while($row = mysqli_fetch_assoc($result_tasks)) { 
 
                                     ?>
-                                    <!-- <tr >
+                                
+                                    <tr >
+                                        <td><?php echo $row['fecha'];?></td>
+                                        <td><?php echo $row['hora'];?></td>
+                                        <td><?php echo $row['dni'];?></td>
+                                        <td><?php echo $row['especialidad'];?></td>                     
+                                        <td><?php echo $row['responsable'];?></td> 
+                                        <td><?php echo $row['estado'];?></td> 
+                                    </tr>
 
-                                    <td><?php echo $row['id_caja'];?></td>
-
-
-                                    <td><?php echo $row['fecha_apertura'];?></td>
-                                    <td><?php echo $row['fecha_cierre'];?></td>
-
-                                    <td><?php echo $row['estado'];?></td>      
-                                                    
-                                    <td><?php echo $row['monto'];?></td> 
-
-
-                                                        </tr> -->
+                                    <?php } ?>
 
                                     <!--end of modal-->
                                 </tbody>
                             </table>
+                            <div class="cabecera-tabla"></div>
                             <script type="text/javascript">// < ![CDATA[
                                 function Eliminar (i) {
                                     document.getElementsByTagName("table")[0].setAttribute("id","tableid");
@@ -141,16 +144,16 @@
     <!-- /page content -->
     <!-- footer content -->
     <footer>
-        <div class="pull-right">
+        <!-- <div class="pull-right">
             <a href="https://ventadecodigofuente.com/">peluqueria tusulutionweb Sys</a>
         </div>
-        <div class="clearfix"></div>
+        <div class="clearfix"></div> -->
     </footer>
     <!-- /footer content -->
                                 <!-- </div>
                                 </div> -->
 
-    <?php include 'datatable_script.php';?>
+    <!-- <?php include 'datatable_script.php';?>
     <script>
         $(document).ready( function() {
             $('#example2').dataTable( {
@@ -172,7 +175,7 @@
 
             );
     } );
-    </script>
+    </script> -->
     <!-- /gauge.js -->
-  </body>
+</body>
 </html>

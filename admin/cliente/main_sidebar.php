@@ -11,22 +11,8 @@
     
     <div class="clearfix"></div>
 
-    <!-- menu profile quick info -->
-    <!-- <div class="profile clearfix">
-      <div class="profile_pic">
-        <img src="../layout/images/<?php echo $imagen_empresa;?>" alt="..." class="img-circle profile_img"> 
-      </div>
-      <div class="profile_info"></div>
-    </div> -->
-
-    <!-- /menu profile quick info -->
-
-    <!-- sidebar menu  OPCIONES -->
     <?php include 'sidebar.php';?>
     <!-- /sidebar menu -->
 
-    <!-- /menu footer buttons -->
-    <?php //include 'sidebar2.php';?>
-    <!-- /menu footer buttons -->
   </div>
 </div>

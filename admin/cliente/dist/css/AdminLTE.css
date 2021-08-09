@@ -1774,7 +1774,7 @@ a:focus {
   border-top-right-radius: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
-  padding: 10px;
+  padding: 15px;
 }
 .no-header .box-body {
   border-top-right-radius: 3px;
@@ -1783,10 +1783,10 @@ a:focus {
 
 .box-body > .table {
   margin-bottom: 0;
-  border-bottom: 2px solid #1977cc;
   background-color: #f4f5fa;
-  text-align: center;
+  /* text-align: center; */
   font-size: 17px;
+  padding: 0 20px;
 }
 
 .box-body .fc {
@@ -1865,6 +1865,34 @@ a:focus {
   font-weight: 400;
   font-size: 12px;
 }
+
+/* NEW */
+
+.dates-info {
+  display: flex;
+  align-items: center;
+  gap: 10px ;
+  font-size: 25px;
+}
+
+.section-shadow {
+  box-shadow: 0px 2px 4px rgb(31 30 47 / 10%);
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 4.5px;
+  padding: 25px 30px;
+  min-height: 1px;
+}
+
+.input-register-date {
+  margin: 15px 5px;
+}
+
+.cabecera-tabla {
+  border-bottom: 2px solid #1977cc;
+}
+
+
 /* Widget: TODO LIST */
 .todo-list {
   margin: 0;
@@ -2254,6 +2282,8 @@ a:focus {
 .btn-info {
   background-color: #00c0ef;
   border-color: #00acd6;
+  float: right;
+  margin-top: 40px;
 }
 .btn-info:hover,
 .btn-info:active,

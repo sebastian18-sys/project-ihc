@@ -17,8 +17,12 @@ if (isset($_POST['iniciar_sesion'])) {
     // descifrado    
     if($row['dni']== $usuario_global &&  $row['password']==$contrasena && $usuario_global != null && $contrasena!= null && $row['dni'] != "123" && $row['password'] != "123" ){
 
+        $_SESSION['Dni'] = $row['dni'];
         $_SESSION['var_user'] = $row['correo'];
         $_SESSION['nombre'] = $row['nombres'];
+        $_SESSION['apellido'] = $row['apellidos'];
+        $_SESSION['telefono'] = $row['celular'];
+        $_SESSION['seguro'] = $row['asegurado'];
         //$_SESSION['usuario-login-activo'] = $row['usuario'];
         echo 'HOALALLSA';
         header("Location: cliente/inicio.php");

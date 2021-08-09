@@ -15,7 +15,7 @@ $tipo = "administrador";
       <li><a href = "inicio.php"><i class="fa fa-home"></i> inicio <span class="fa fa-chevron-right"></span></a></li>
 
       <!-- CAJA -->
-      <li><a href = "caja.php"><i class="fa fa-calendar"></i> Reservar Cita <span class="fa fa-chevron-right"></span></a></li>
+      <li><a href = "registrar_cita.php"><i class="fa fa-calendar"></i> Reservar Cita <span class="fa fa-chevron-right"></span></a></li>
 
       <!-- CAJA -->
       <li><a href = "proxima_cita.php"><i class="fa fa-calendar"></i> Próximas Citas <span class="fa fa-chevron-right"></span></a></li>

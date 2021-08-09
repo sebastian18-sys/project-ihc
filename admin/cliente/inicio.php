@@ -4,6 +4,10 @@
   error_reporting(0);
   $varsesion=$_SESSION['var_user'];
   $user=$_SESSION['nombre'];
+  $dni=$_SESSION['Dni'];
+  $lastname=$_SESSION['apellido'];
+  $phone=$_SESSION['telefono'];
+  $insurence=$_SESSION['seguro'];
 
   // if($varsesion==null||$varsesion==''){
   //   header('Location: ../inicio_sesion_admin.php');
@@ -86,7 +90,7 @@
                   <!-- <div class="icon"><img height="80" width="80" src="img/cajero.png">
                     <i class=""></i>
                   </div> -->
-                  <a href="diseño/caja.php" class="small-box-footer">Reservar ahora <i class="fa fa-arrow-circle-right"></i></a>
+                  <a href="registrar_cita.php" class="small-box-footer">Reservar ahora <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
               </div>
              

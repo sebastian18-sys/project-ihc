@@ -1,7 +1,4 @@
  <?php //include '../layout/session.php';?> 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,10 +11,12 @@
     <meta http-equiv="Pragma" content="no-cache">
 
     <title>Sistema Hospitalarios</title>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- NProgress -->
     <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
