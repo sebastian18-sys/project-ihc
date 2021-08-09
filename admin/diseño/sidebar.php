@@ -1,6 +1,6 @@
 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
   <div class="menu_section">
-    <h1 class = "text-center">Admin</h1>
+  <a href="#" class="site_title"><h1 class="text-center">Admin</h1></a>
     <ul class="nav side-menu"> 
 
       <li><a href = "inicio.php"><i class="fa fa-dashboard"></i> Inicio <span class="fa fa-chevron-right"></span></a></li>                 

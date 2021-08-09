@@ -1,6 +1,6 @@
 <?php 
 include 'header.php';
-include '../../base_datos/db.php'
+include '../../base_datos/db.php';
 ?>
 
 <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
@@ -44,7 +44,7 @@ ul {
           <div class="box-body"></div>
           
           <div class="box-header">
-            <h3 class="box-title"> Registrados</h3>
+            <h3 class="box-title"> Agregar paciente a cama UCI</h3>
           </div>
           <div class="box-body">
             <table ID="example22" class="table table-bordered table-striped">
@@ -55,8 +55,7 @@ ul {
                   <th>DNI</th>
                   <th>Nombres</th>
                   <th>Apellidos</th>
-                  <th>Correo</th>
-                  <th>Celular</th>
+                  <th class = "text-center">Agregar a UCI</th>
                 </tr>
               </thead>
 
@@ -64,7 +63,11 @@ ul {
 
 <?php
 
-$query = "SELECT dni,nombres,apellidos,correo,celular FROM pacientes where dni != '123'  and asegurado = 0";
+$query = "SELECT p.dni as dni, p.nombres, p.apellidos FROM pacientes as p
+left join camas_uci as c
+ON p.dni = c.dni 
+WHERE c.reservado IS NULL and p.dni != '123'";
+
 $result_tasks = mysqli_query($conn, $query); 
 while($row = mysqli_fetch_assoc($result_tasks)) { 
 
@@ -74,8 +77,18 @@ while($row = mysqli_fetch_assoc($result_tasks)) {
                   <td><?php echo $row['dni'];?></td>
                   <td><?php echo $row['nombres'];?></td>
                   <td><?php echo $row['apellidos'];?></td>
-                  <td><?php echo $row['correo'];?></td>      
-                  <td><?php echo $row['celular'];?></td> 
+
+                  <td class  ="text-center">                    
+                    <a href="validar_agregar_cama_paciente.php">
+                    <i class="fa fa-bed" aria-hidden="true"></i>
+                    <?php
+                    $_SESSION['dni_p'] = $row['dni'];
+                    $_SESSION['nombres_p'] = $row['nombres'];
+                    $_SESSION['apellidos_p'] = $row['apellidos'];
+                    ?>
+                    </a>
+                  </td> 
+
                 </tr>
                 <?php } ?>
 

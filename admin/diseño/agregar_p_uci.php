@@ -44,7 +44,7 @@ ul {
           <div class="box-body"></div>
           
           <div class="box-header">
-            <h3 class="box-title"> Asegurados</h3>
+            <h3 class="box-title"> Camas UCI disponibles</h3>
           </div>
           <div class="box-body">
             <table ID="example22" class="table table-bordered table-striped">
@@ -56,6 +56,7 @@ ul {
                   <th>DNI</th>
                   <th>Nombres</th>
                   <th>Apellidos</th>
+                  <th class="text-center">Agregar</th>
                 </tr>
               </thead>
 
@@ -73,7 +74,17 @@ while($row = mysqli_fetch_assoc($result_tasks)) {
                   <td><?php echo $row['codigo'];?></td>
                   <td><?php echo $row['dni'];?></td>
                   <td><?php echo $row['nombres'];?></td>
-                  <td><?php echo $row['apellidos'];?></td>      
+                  <td><?php echo $row['apellidos'];?></td>
+                  
+                  <td class  ="text-center">
+                    <a href="agregar_cama_paciente.php">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                      <?php
+                      $_SESSION['codigo_cama'] = $row['codigo'];
+                      ?>
+                    </a>
+                  </td> 
+
                 </tr>
                 <?php } ?>
 

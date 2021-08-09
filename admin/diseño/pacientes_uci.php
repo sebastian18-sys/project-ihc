@@ -44,7 +44,7 @@ ul {
           <div class="box-body"></div>
           
           <div class="box-header">
-            <h3 class="box-title"> Asegurados</h3>
+            <h3 class="box-title"> Pacientes UCI</h3>
           </div>
           <div class="box-body">
             <table ID="example22" class="table table-bordered table-striped">
@@ -62,6 +62,8 @@ ul {
               <tbody>
 
 <?php
+
+// UPDATE `base_datos_ihc`.`camas_uci` SET `dni` = NULL, `nombres` = NULL, `apellidos` = NULL, `reservado` = '0' WHERE (`codigo` = '102');
 
 $query = "SELECT * FROM camas_uci where reservado = true";
 $result_tasks = mysqli_query($conn, $query); 
