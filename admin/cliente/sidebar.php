@@ -4,6 +4,15 @@
 
 <?php
 $tipo = "administrador";
+    session_start();
+    error_reporting(0);
+    $varsesion=$_SESSION['var_user'];
+    $user=$_SESSION['nombre'];
+    $dni=$_SESSION['Dni'];
+    $lastname=$_SESSION['apellido'];
+    $phone=$_SESSION['telefono'];
+    $insurence=$_SESSION['seguro'];
+
 ?>
 
 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
@@ -14,20 +23,25 @@ $tipo = "administrador";
       <!-- INICIO -->
       <li><a href = "inicio.php"><i class="fa fa-home"></i> inicio <span class="fa fa-chevron-right"></span></a></li>
 
-      <!-- CAJA -->
+      <!-- RESERVAR -->
       <li><a href = "registrar_cita.php"><i class="fa fa-calendar"></i> Reservar Cita <span class="fa fa-chevron-right"></span></a></li>
 
-      <!-- CAJA -->
+      <!-- PROXIMAS -->
       <li><a href = "proxima_cita.php"><i class="fa fa-calendar"></i> Próximas Citas <span class="fa fa-chevron-right"></span></a></li>
 
-      <!-- CAJA -->
-      <li><a href = "caja.php"><i class="fa fa-bed"></i> Camas UCI <span class="fa fa-chevron-right"></span></a></li>
+      <!-- FAMILIA -->
+      <?php if ($insurence == 1) { ?>
+      <li><a href = "familia.php"><i class="fa fa-users"></i> Familia <span class="fa fa-chevron-right"></span></a></li>
+      <?php } ?>
 
-      <!-- CAJA -->
-      <li><a href = "caja.php"><i class="fa fa-file-text-o"></i> Diagnóstico <span class="fa fa-chevron-right"></span></a></li>
+      <!-- CAMAS -->
+      <li><a href = "camas_uci.php"><i class="fa fa-bed"></i> Camas UCI <span class="fa fa-chevron-right"></span></a></li>
 
-      <!-- CAJA -->
-      <li><a href = "caja.php"><i class="fa fa-medkit"></i> Asegurado <span class="fa fa-chevron-right"></span></a></li>
+      <!-- DIAGNÓSTICO -->
+      <!-- <li><a href = "#"><i class="fa fa-file-text-o"></i> Diagnóstico <span class="fa fa-chevron-right"></span></a></li> -->
+
+      <!-- ASEGURADO -->
+      <li><a href = "#"><i class="fa fa-medkit"></i> Asegurado <span class="fa fa-chevron-right"></span></a></li>
       
       <!-- USUARIOS -->
       <!-- <?php if ($tipo=="administrador" ) { ?>
