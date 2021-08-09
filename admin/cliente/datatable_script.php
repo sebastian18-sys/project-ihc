@@ -23,6 +23,38 @@
     <script src="vendors/jszip/dist/jszip.min.js"></script>
     <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
     <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="./js2/datepicker/daterangepicker.js"></script>
+    <script src="./js2/jquery-1.3.2.min.js"></script>
+    <script src="./js2/jquery.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker();
+        });
+        </script>
+        <script>
+        $(function() {
+        // $('#txtDate').datepicker({ 
+        //     beforeShowDay: $.datepicker.noWeekends 
+        // });
+        $("#txtDate").datepicker({
+          beforeShowDay: function(date) {
+              var day = date.getDay();
+              return [(day != 0),  ''];
+            }
+        });
+        });
+
+
+        
+    </script>
 
     <!-- Custom Theme Scripts -->
     <script src="build/js/custom.min.js"></script>

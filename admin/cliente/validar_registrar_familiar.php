@@ -24,6 +24,7 @@ if (isset($_POST['Registrar_Familiar'])) {
     die("Query Failed.");
     // include('./register-error.php');
   } else {
+    $_SESSION['dni_fa'] = $dni_family;
     header("Location: familia.php");
   }
 }

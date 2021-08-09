@@ -139,7 +139,7 @@
                                         </div>
                                         <p>Ingrese la siguiente información</p>
                                         <div class="card-body">
-                                            <form action="validar_registrar_cita.php" method="POST">
+                                            <form action="validar_registrar_cita.php" id="elForm" method="POST">
                                                 <div class="col-sm-6">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Especialidad:</label>
@@ -149,11 +149,17 @@
                                                             <select class="form-control" name="especialidad" id="">
                                                                 <option>Seleccionar especialidad</option>
                                                                 <option>Cardiología</option>
-                                                                <option>Endrocrinología</option>
-                                                                <option>Neurología</option>
+                                                                <option>Oncología</option>
+                                                                <option>Pediatría</option>
+                                                                <option>Ginecología</option>
+                                                                <option>Oftalmología</option>
+                                                                <option>Traumatología</option>
                                                                 <option>Odontología</option>
-                                                                <option>Neumonología</option>
-                                                                <option>Psiquiatría</option>
+                                                                <option>Dermatología</option>
+                                                                <option>Cirugía plástica</option>
+                                                                <option>Neurología</option>
+                                                                <option>Urología</option>
+                                                                <option>Nutrición</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -163,7 +169,7 @@
                                                         <label>Fecha:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-unlock"></i> -->
-                                                            <input type="date" class="form-control" placeholder="Contraseña" name="fecha"  required="required"/>
+                                                            <input type="text" id="txtDate" class="form-control" placeholder="Fecha" name="fecha" onChange="sinDomingos()" onblur="obtenerfechafinf1()" required="required"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -181,6 +187,12 @@
                                                                 <option>Mirella Vega</option>
                                                                 <option>Ana Flores</option>
                                                                 <option>Moises Vargas</option>
+                                                                <option>Ericka Castillo</option>
+                                                                <option>Javier Céspedes</option>
+                                                                <option>Alonso Gomez</option>
+                                                                <option>Dulce Acosta</option>
+                                                                <option>Miguel Saravia</option>
+                                                                <option>Laura Ramirez</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -216,7 +228,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <Input  class="btn btn-info mt-5" name= "Reservar_Cita" Type = "submit" value = "Reservar Cita">   
+                                                <Input id="elSubmit" class="btn btn-info mt-5" name= "Reservar_Cita" Type = "submit" value = "Reservar Cita">   
                                             </form>  
                                         </div>    
                                     </div>
@@ -254,6 +266,27 @@
                                         }
                                 // ]]>
                             </script>
+                            <!-- <script>
+                                var elDate = document.getElementById('fecha');
+                                var elForm = document.getElementById('elForm');
+                                var elSubmit = document.getElementById('elSubmit');
+
+                                function sinDomingos(){
+                                    var day = new Date(elDate.value ).getUTCDay();
+                                    // Días 0-6, 0 es Domingo 6 es Sábado
+                                    elDate.setCustomValidity(''); // limpiarlo para evitar pisar el fecha inválida
+                                    if( day == 0 ){
+                                    elDate.setCustomValidity('Domingos no disponibles, por favor seleccione otro día');
+                                    } else {
+                                    elDate.setCustomValidity('');
+                                    }
+                                    if(!elForm.checkValidity()) {elSubmit.click()};
+                                }
+
+                                function obtenerfechafinf1(){
+                                    sinDomingos();
+                                }
+                            </script> -->
                         </div>
                         <!-- /.box-body -->       
                     </div>
@@ -302,6 +335,10 @@
             );
     } );
     </script>
+    <!-- <script>
+        $("#datepicker").datepicker();
+    </script> -->
+    
     <!-- /gauge.js -->
   </body>
 </html>

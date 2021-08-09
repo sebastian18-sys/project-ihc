@@ -24,27 +24,28 @@
 
 <?php
 
-if  (isset($_GET['dni_familia'])) {
-  $dni=$_GET['dni_familia'];
-  $query = "SELECT * FROM familiares WHERE dni_familiar=$dni";
-  $result = mysqli_query($conn, $query);
+// if  (isset($_GET['dni_familiar'])) {
+  $dni_fa=$_SESSION['dni_fa'];
+//   echo $dni_fa;
+  $query = "SELECT * FROM familiares WHERE dni_familiar='$dni_fa'";
+  $result = mysqli_query($conn, $query);    
   if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_array($result);
-    $dni = $_POST['dni_familia'];
-    $nombre= $_POST['nombres'];
-    $apellidos = $_POST['apellidos'];
-    $fecha_nacimiento = $_POST['fecha_nacimiento'];
-    $genero = $_POST['genero'];
-    $telefono = $_POST['telefono'];
+    $dni_fa = $row['dni_familiar'];
+    $nombre = $row['nombre'];
+    $apellidos = $row['apellidos'];
+    $fecha_nacimiento = $row['fecha_nacimiento'];
+    $genero = $row['genero'];
+    $telefono = $row['telefono'];
   }
-}
+// }
 
 ?>
 
 
 <?php 
     if (isset($_POST['editar_familiar'])) {
-    $dni_f = $_POST['dni'];
+    $dni_f = $_POST['dni_familia'];
     $nombre_f= $_POST['nombres'];
     $apellidos_f = $_POST['apellidos'];
     $fecha_nacimiento_f = $_POST['fecha_nacimiento'];
@@ -119,7 +120,7 @@ if  (isset($_GET['dni_familia'])) {
                                         <div class="dates-info">
                                             <i class="fas fa-user-md"></i>
                                             <h4>Información del paciente</h4>
-                                        </div>
+                                        </div>  
                                         <div class="card-body">
                                             <form action="./editar_familiar.php" method="POST">   
 
@@ -151,7 +152,7 @@ if  (isset($_GET['dni_familia'])) {
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>DNI:</label>
                                                         <div class="group">
-                                                            <input type="text" class="form-control" placeholder="DNI" name="dni_familia"  required="required" value="<?php echo $dni ?>"/>
+                                                            <input type="text" class="form-control" placeholder="DNI" name="dni_familia"  required="required" value="<?php echo $dni_fa ?>"/>
                                                         </div>
                                                     </div>
                                                 </div>
