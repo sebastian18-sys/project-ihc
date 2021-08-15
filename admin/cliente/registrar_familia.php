@@ -136,8 +136,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <Input  class="btn btn-info mt-5" name= "Registrar_Familiar" Type = "submit" value = "Añadir familiar"> 
-                                                <a href="./familia.php"> <input class="btn btn-success mt-5" type="button" value="Regresar"> </a>
+                                                <Input  class="btn btn-success mt-5" name= "Registrar_Familiar" Type = "submit" value = "Añadir familiar"> 
+                                                <a href="./familia.php"> <input class="btn btn-danger mt-5" type="button" value="Regresar"> </a>
                                                   
                                             </form>  
                                         </div>    

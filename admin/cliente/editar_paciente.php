@@ -112,7 +112,7 @@
 
                                                 
 
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>DNI:</label>
                                                         <div class="group">
@@ -121,7 +121,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Nombres:</label>
                                                         <div class="group">
@@ -130,7 +130,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Apellidos:</label>
                                                         <div class="group">
@@ -139,7 +139,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Correo:</label>
                                                         <div class="group">
@@ -148,7 +148,7 @@
                                                         </div>
                                                     </div>
                                                 </div> 
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Teléfono:</label>
                                                         <div class="group">
@@ -157,8 +157,9 @@
                                                         </div>
                                                     </div>
                                                 </div> 
-                                                <Input  class="btn btn-info mt-5" name= "editar_paciente" Type = "submit" value = "Actualizar"> 
-                                                <a href="./familia.php"> <input class="btn btn-success mt-5" type="button" value="Regresar"> </a>
+                                                
+                                                <Input  class="btn btn-success mt-5 " name= "editar_paciente" Type = "submit" value = "Actualizar"> 
+                                                <a href="./familia.php"> <input class="btn btn-danger mt-5 " type="button" value="Regresar"> </a>
                                             </form>
                                         </div>
                                     </div>

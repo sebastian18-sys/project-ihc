@@ -183,8 +183,8 @@
                                                 
                                                 
 
-                                                <Input  class="btn btn-info mt-5" name= "editar_familiar" Type = "submit" value = "Actualizar"> 
-                                                <a href="./familia.php"> <input class="btn btn-success mt-5" type="button" value="Regresar"> </a>
+                                                <Input  class="btn btn-success mt-5" name= "editar_familiar" Type = "submit" value = "Actualizar"> 
+                                                <a href="./familia.php"> <input class="btn btn-danger mt-5" type="button" value="Regresar"> </a>
                                             </form>
                                         </div>
                                     </div>

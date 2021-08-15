@@ -2295,6 +2295,8 @@ a:focus {
 .btn-danger {
   background-color: #dd4b39;
   border-color: #d73925;
+  float: right;
+  margin-top: 40px;
 }
 .btn-danger:hover,
 .btn-danger:active,
