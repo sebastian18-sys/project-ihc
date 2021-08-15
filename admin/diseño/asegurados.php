@@ -57,6 +57,7 @@ ul {
                   <th>Apellidos</th>
                   <th>Correo</th>
                   <th>Celular</th>
+                  <th class="text-center">Dar de baja</th>
                 </tr>
               </thead>
 
@@ -75,8 +76,19 @@ while($row = mysqli_fetch_assoc($result_tasks)) {
                   <td><?php echo $row['nombres'];?></td>
                   <td><?php echo $row['apellidos'];?></td>
                   <td><?php echo $row['correo'];?></td>      
-                  <td><?php echo $row['celular'];?></td> 
+                  <td><?php echo $row['celular'];?></td>
+                  
+                  <td class  ="text-center">
+                    <!-- row id al inicio -->
+                    <a href="dar_de_baja.php?dni=<?php echo $row['dni']?>"> 
+                      <i class="fa fa-ban" aria-hidden="true"></i>                     
+                    </a>
+                  </td>
+
+
+                  
                 </tr>
+
                 <?php } ?>
 
               </tbody>

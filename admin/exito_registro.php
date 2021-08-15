@@ -1,32 +1,26 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <title>Login - <?php include('dist/includes/title.php');?></title> -->
+  
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="../sys-veterinaria/veterinaria_sistemasenoferta/bootstrap/css/bootstrap.min.css"> -->
     
     <!-- Font Awesome -->
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="sys-veterinaria/dist/css/skins/_all-skins.min.css">
     <title>Sistema Hospitalario</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
@@ -35,7 +29,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     />
     <!-- /meta tags -->
     <!-- custom style sheet -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" />
     <!-- /custom style sheet -->
     <!-- fontawesome css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -50,71 +44,67 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
+<style>
+
+    .alerta_inicio {
+        padding-top: 20px;
+        padding-bottom: 20px; 
+        border-radius: 5px;
+        background: #28a745;
+        /* #281745 */
+    }
+    .text-center {
+        text-align: center;
+        margin: 0px;
+           
+    }
+    h4 {
+        color: white;
+    }
+
+</style>
+
 <body>
     <!-- https://sistemasenoferta.blogspot.com/ -->
     <div class="head-login">
-    <h2>Crear cuenta</h2>
+        <h2>Bienvenidos al Sistema Hospitalario</h2>
     </div>
     <div class=" w3l-login-form">
-        <h2>Registro</h2>
-    <form action="validar_registro.php" method="post">
+        <h2>Portal del paciente</h2>
+        <form action="validar_inicio_sesion.php" method="POST">
 
-            <div class=" w3l-form-group">
-                <label>DNI:</label>
+            <div class="alerta_inicio">
+                <h4 class ="text-center">Registro exitoso!. Inicia sesión para continuar</h4>
+            </div>
+        
+            <div class=" w3l-form-group input-filled">
+                <label>DNI</label>
                 <div class="group">
                     <i class="fas fa-id-card"></i>
-                    <input type="text" class="form-control"  name="dni"  required="required" />
+                    <input type="text" class="form-control"   name="Dni"  required="required"/>
                 </div>
             </div>
             <div class=" w3l-form-group">
-                <label>Nombres:</label>
-                <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control"   name="nombres"  required="required" />
-                </div>
-            </div>
-            <div class=" w3l-form-group">
-                <label>Apellidos:</label>
-                <div class="group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" class="form-control"   name="apellidos"  required="required" />
-                </div>
-            </div>
-            <div class=" w3l-form-group">
-                <label>Correo:</label>
-                <div class="group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" class="form-control"  name="email"  required="required" style="border: 0; outline: 0;" />
-                </div>
-            </div>
-            <div class=" w3l-form-group">
-                <label>Celular:</label>
-                <div class="group">
-                    <i class="fas fa-phone"></i>
-                    <input type="text" class="form-control"  name="celular"  required="required" />
-                </div>
-            </div>
-            <div class=" w3l-form-group">
-                <label>Constraseña:</label>
+                <label>Contraseña</label>
                 <div class="group">
                     <i class="fas fa-unlock"></i>
-                    <input type="password" class="form-control"  name="password"  required="required" />
+                    <input type="password" class="form-control"  name="Password"  required="required"/>
                 </div>
-            </div>
+            </div>            
+
             <div class="forgot">
-                <!-- <p>No tienes cuenta? <strong><a href="">Registrese aquí</a></strong> </p> -->
-                <p><input type="checkbox">Acepto los términos y condiciones</p>
+                <!-- <p>No tienes cuenta? <strong><a href="./register.php">Registrese aquí</a></strong> </p> -->
+                <p><input type="checkbox">Recordar password</p>
             </div>
-            <!-- <button type="submit" name="sign in">Crear cuenta</button> -->
-            <input type="submit" name="sign_in" class="button" value="Registrar">
-            <a href="inicio_sesion_admin.php"><input class="button" Type="button" value="¿Ya tienes una cuenta?. Inicia sesión"></a>
+            <Input  class="btn btn-success" name= "iniciar_sesion" Type = "submit" value = "Iniciar Sesión">
+            <a href="./register.php"><input class="button" Type="button" value="Si no tienes una cuenta regístrate"></a> 
     
         </form>
  
     </div>
        <!-- <footer>
           <div class="pull-right">
-                             <a href="https://sistemasenoferta.blogspot.com/">veterinaria</a>
+                             <a href="https://sistemasenoferta.blogspot.com/">veterinariaACSDASCDAD</a>
           </div>
           <div class="clearfix"></div>
         </footer> -->
@@ -136,3 +126,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </body>
 
 </html>
+
+<?php session_destroy(); ?>
