@@ -56,6 +56,7 @@ ul {
                   <th>DNI</th>
                   <th>Nombres</th>
                   <th>Apellidos</th>
+                  <th class="text-center" >Liberar cama</th>
                 </tr>
               </thead>
 
@@ -75,7 +76,15 @@ while($row = mysqli_fetch_assoc($result_tasks)) {
                   <td><?php echo $row['codigo'];?></td>
                   <td><?php echo $row['dni'];?></td>
                   <td><?php echo $row['nombres'];?></td>
-                  <td><?php echo $row['apellidos'];?></td>      
+                  <td><?php echo $row['apellidos'];?></td>
+                  
+                  <td class  ="text-center">
+                    <!-- row id al inicio -->
+                    <a href="dar_de_baja_cama.php?codigo=<?php echo $row['codigo']?>"> 
+                      <i class="fa fa-ban" aria-hidden="true"></i>                     
+                    </a>
+                  </td>
+
                 </tr>
                 <?php } ?>
 

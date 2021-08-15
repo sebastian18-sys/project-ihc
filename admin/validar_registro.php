@@ -23,7 +23,7 @@ if (isset($_POST['sign_in'])) {
     //die("Query Failed.");
     // include('./register-error.php');
   } else {
-    header("Location: inicio_sesion_admin.php");
+    header("Location: exito_registro.php");
   }
 }
 

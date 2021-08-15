@@ -26,6 +26,7 @@
 
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
+    <link href="build/css/custom.css" rel="stylesheet">
     <script type="text/javascript" src="js2/jquery.js"></script>
     <script type="text/javascript" src="js2/chartJS/Chart.min.js"></script>
 	<style>

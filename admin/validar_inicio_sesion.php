@@ -33,7 +33,7 @@ if (isset($_POST['iniciar_sesion'])) {
         header("Location: diseño/admin.php");
         break;
     } else {
-        header("Location: error/inicio_sesion_error.php");
+        header("Location: error_inicio_sesion.php");
     }
     } 
 }

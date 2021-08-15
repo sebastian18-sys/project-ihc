@@ -137,7 +137,7 @@ $num = mysqli_num_rows($select);
 echo $num;
 ?>
                     </h1>
-                    <h4>Camas UCI</h4>
+                    <h4>Camas UCI disponibles</h4>
                   </div>
                   <!-- <div class="icon"><img height="80" width="80" src="img/setting.png">
                     <i class=""></i>
