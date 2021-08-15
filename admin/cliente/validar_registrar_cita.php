@@ -16,13 +16,13 @@ if (isset($_POST['Reservar_Cita'])) {
   
 
   // $query = "INSERT INTO usuarios (usuario, correo, contraseña) VALUES ('$usu', '$email', '$password')";
-  $query = "INSERT INTO cita (fecha, hora, dni, especialidad, responsable, estado) VALUES ('$date', '$time', '$dni', '$speciality', '$professional', 0)";
+  $query = "INSERT INTO cita (fecha, hora, dni, especialidad, responsable) VALUES ('$date', '$time', '$dni', '$speciality', '$professional')";
   $result = mysqli_query($conn, $query);  //Query
   if(!$result) {
     die("Query Failed.");
     // include('./register-error.php');
   } else {
-    header("Location: registrar_cita.php");
+    header("Location: proxima_cita.php");
   }
 }
 

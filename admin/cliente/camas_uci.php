@@ -65,7 +65,7 @@
                             <div class="row">
 
                                 <!-- CAMAS UCI TOTALES -->
-                                <div class="col-lg-3 col-xs-6">
+                                <div class="col-lg-3 col-sm-6 col-xs-12">
                                     <div class="small-box bg-aqua">
                                     <div class="inner">
                                         <i class="fa fa-bed"></i>
@@ -82,13 +82,13 @@
                                     <!-- <div class="icon"><img height="80" width="80" src="img/setting.png">
                                         <i class=""></i>
                                     </div> -->
-                                    <a href="agregar_p_uci.php" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+                                    <!-- <a href="agregar_p_uci.php" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a> -->
                                     </div>
                                 </div>
                                 <!-- FIN CAMAS UCI DISPONIBLES -->
 
                                 <!-- CAMAS UCI DISPONIBLES -->
-                                <div class="col-lg-3 col-xs-6">
+                                <div class="col-lg-3 col-sm-6 col-xs-12">
                                     <div class="small-box bg-aqua">
                                     <div class="inner">
                                         <i class="fa fa-bed"></i>
@@ -105,7 +105,7 @@
                                     <!-- <div class="icon"><img height="80" width="80" src="img/setting.png">
                                         <i class=""></i>
                                     </div> -->
-                                    <a href="agregar_p_uci.php" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+                                    <!-- <a href="agregar_p_uci.php" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a> -->
                                     </div>
                                 </div>
                                 <!-- FIN CAMAS UCI DISPONIBLES -->

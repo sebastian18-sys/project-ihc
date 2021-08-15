@@ -68,108 +68,115 @@
 
                                         <?php if($insurence == 1) { ?>
                                             <div class="dates-info">
-                                                <i class="fas fa-user-md"></i>
-                                                <h4>Ususario: <?php echo $varsesion ?> </h4>
+                                                <i class="fas fa-user-md" style="font-size: 35px; color: #1977c5"></i>
+                                                <h4 style="font-size: 25px; color: #1977c5">Usuario: <?php echo $varsesion ?> </h4>
                                             </div>
-                                            <p> Estimado <strong> <?php echo $user ?> </strong>  actualmente usted cuenta con un seguro </p>
+                                            <p style="font-size: 18px"> Estimado <strong> <?php echo $user ?> </strong>  actualmente usted cuenta con un seguro </p>
                                         <?php } else { ?>
                                             <div class="dates-info">
-                                                <i class="fas fa-user-md"></i>
-                                                <h4>Ususario: <?php echo $varsesion ?> </h4>
+                                                <i class="fas fa-user-md" style="font-size: 35px; color: #1977c5"></i>
+                                                <h4 style="font-size: 25px; color: #1977c5">Ususario: <?php echo $varsesion ?> </h4>
                                             </div>
-                                            <p> Estimado <strong> <?php echo $user ?> </strong>  actualmente usted <strong>NO</strong> cuenta con un seguro </p>
+                                            <p style="font-size: 18px; color: #2c4964"> Estimado <strong> <?php echo $user ?> </strong>  actualmente usted <strong>NO</strong> se encuentra asegurado 
+                                            por ende usted no podrá gozar de los beneficios que le ofrece Clínica Medilab. 
+                                            En esta ocasión Medilab le ofrece asegurarse a usted y su familia para que pueda 
+                                            vivir de manera plena y sin preocupaciones, este servicio tendrá un costo de $84.00 mensuales, 
+                                            para asegurarse usted deberá acercarse a nuestros establecimientos donde recibirá mayor información sobre el proceso que debe seguir.
+                                            
+                                            </p>
                                         <?php } ?>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="section-shadow">
                                         <div class="dates-info" style="justify-content: center;">
-                                            <h4 style="font-size: 33px;">¿Qué cubren los Seguros de Salud?</h4>
+                                            <h4 style="font-size: 33px; color: #1977c5">¿Qué cubren los Seguros de Salud?</h4>
                                         </div>
-                                        <p style="font-size: 20px; text-align: center; margin-top: 20px;">Obtén la más completa atención en el cuidado de tu salud, con cobertura ambulatoria, hospitalaria, de emergencia,
+                                        <p style="font-size: 20px; text-align: center; margin-top: 20px; color: #2c4964">Obtén la más completa atención en el cuidado de tu salud, con cobertura ambulatoria, hospitalaria, de emergencia,
                                             maternidad y oncología.
                                         </p>
-                                        <div class="col-md-3">
+                                        <form action="">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-ambulance"></i>
+                                                    <i class="fas fa-ambulance" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Atención de emergencia</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Atención de emergencia</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-hospital"></i>
+                                                    <i class="fas fa-hospital" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Hospitalización</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Hospitalización</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-bell"></i>
+                                                    <i class="fas fa-bell" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Atención ambulatoria</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Atención ambulatoria</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-ribbon"></i>
+                                                    <i class="fas fa-ribbon" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Cobertura oncológica</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Cobertura oncológica</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-baby"></i>
+                                                    <i class="fas fa-baby" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Maternidad</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Maternidad</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-people-carry"></i>
+                                                    <i class="fas fa-people-carry" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Médico a domicilio y por teléfono</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Médico a domicilio y por teléfono</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-stethoscope"></i>
+                                                    <i class="fas fa-stethoscope" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Tratamientos</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Tratamientos</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-lg-3 col-sm-6 col-xs-12">
                                             <div class=" w3l-form-group input-register-date">
                                                 <!-- <label>DNI:</label> -->
                                                 <div class="dates-info" style="flex-direction: column">
-                                                    <i class="fas fa-file-medical"></i>
+                                                    <i class="fas fa-file-medical" style="font-size: 35px; color: #1977c5"></i>
                                                         <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni" readonly="readonly" required="required" value="<?php //echo $dni ?>"/> -->
-                                                    <p style="font-size: 17px">Chequeo preventivo</p>
+                                                    <p style="font-size: 17px; color: #2c4964">Chequeo preventivo</p>
                                                 </div>
                                             </div>
                                         </div>
-
+                                        </form>
                                     </div>
                                 </div>
 

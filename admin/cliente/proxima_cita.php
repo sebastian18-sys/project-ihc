@@ -60,8 +60,9 @@
                     <div class="box-body">
                                  
                         <div class="box-body">
+                            <div class="table-responsive">
                             <table ID="example22" class="table table-bordered table-striped shadow-sm dataTable no-footer">
-                                <thead>
+                                <thead style="font-size: 20px">
                                     
                                         <tr>
                                             <th>Fecha</th>
@@ -69,12 +70,12 @@
                                             <th>DNI</th>
                                             <th>Especialidad</th>
                                             <th>Responsable</th>
-                                            <th>Estado</th>
+                                            <!-- <th>Estado</th> -->
                                         </tr>
                                     
                                 </thead>
                                 
-                                <tbody>
+                                <tbody style="font-size: 18px">
                               
                                     <?php
 
@@ -90,7 +91,7 @@
                                         <td><?php echo $row['dni'];?></td>
                                         <td><?php echo $row['especialidad'];?></td>                     
                                         <td><?php echo $row['responsable'];?></td> 
-                                        <td><?php echo $row['estado'];?></td> 
+                                        
                                     </tr>
 
                                     <?php } ?>
@@ -98,6 +99,7 @@
                                     <!--end of modal-->
                                 </tbody>
                             </table>
+                            </div>
                             <div class="cabecera-tabla"></div>
                             <script type="text/javascript">// < ![CDATA[
                                 function Eliminar (i) {
@@ -153,8 +155,8 @@
                                 <!-- </div>
                                 </div> -->
 
-    <!-- <?php include 'datatable_script.php';?>
-    <script>
+    <?php include 'datatable_script.php';?>
+    <!-- <script>
         $(document).ready( function() {
             $('#example2').dataTable( {
                 "language": {

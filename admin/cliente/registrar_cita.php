@@ -9,6 +9,10 @@
     $insurence=$_SESSION['seguro'];
 ?>
 
+<?php include '../../base_datos/db.php'
+    //$query = 'SELECT * FROM doctores WHERE nombres = ''';
+?>
+
 <!-- Font Awesome -->
 <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
 <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
@@ -16,6 +20,7 @@
 <link rel="stylesheet" href="plugins/select2/select2.min.css">
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 <body class="nav-md">
     <div class="container body">
@@ -62,17 +67,16 @@
                                  
                         <div class="box-body">
                             <div class="row">
-
                                 <div class="col-md-12">
                                     <div class="section-shadow">
                                         <div class="dates-info">
                                             <i class="fas fa-user-md"></i>
-                                            <h4>Información del paciente</h4>
+                                            <h4 style="font-size: 28px">Información del paciente</h4>
                                         </div>
-                                        <p>Paciente que recibirá la atención</p>
+                                        <p style="font-size: 19px">Paciente que recibirá la atención</p>
                                         <div class="card-body">
                                             <form action="" method="POST">   
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-4 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>DNI:</label>
                                                         <div class="group">
@@ -81,7 +85,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-4 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Nombres:</label>
                                                         <div class="group">
@@ -90,7 +94,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-4 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Apellidos:</label>
                                                         <div class="group">
@@ -99,7 +103,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-4 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Correo:</label>
                                                         <div class="group">
@@ -108,7 +112,7 @@
                                                         </div>
                                                     </div>
                                                 </div> 
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-4 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Teléfono:</label>
                                                         <div class="group">
@@ -117,7 +121,7 @@
                                                         </div>
                                                     </div>
                                                 </div> 
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-4 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Seguro:</label>
                                                         <div class="group">
@@ -135,36 +139,59 @@
                                     <div class="section-shadow">
                                         <div class="dates-info">
                                             <i class="fas fa-notes-medical"></i>
-                                            <h4>Datos de la cita</h4>
+                                            <h4 style="font-size: 28px">Datos de la cita</h4>
                                         </div>
-                                        <p>Ingrese la siguiente información</p>
+                                        <p style="font-size: 19px">Ingrese la siguiente información</p>
                                         <div class="card-body">
                                             <form action="validar_registrar_cita.php" id="elForm" method="POST">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Especialidad:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
                                                             <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni"  required="required"/> -->
-                                                            <select class="form-control" name="especialidad" id="">
-                                                                <option>Seleccionar especialidad</option>
-                                                                <option>Cardiología</option>
-                                                                <option>Oncología</option>
-                                                                <option>Pediatría</option>
-                                                                <option>Ginecología</option>
-                                                                <option>Oftalmología</option>
-                                                                <option>Traumatología</option>
-                                                                <option>Odontología</option>
-                                                                <option>Dermatología</option>
-                                                                <option>Cirugía plástica</option>
-                                                                <option>Neurología</option>
-                                                                <option>Urología</option>
-                                                                <option>Nutrición</option>
-                                                            </select>
+                                                    
+                                                            <select class="form-control" name="especialidad" id="cdx_especialidad" required="required">
+                                                                <option value="">Seleccionar especialidad</option>
+
+                                                                <?php
+                                                                   $query = "SELECT * FROM doctores";
+                                                                   $result_tasks = mysqli_query($conn, $query); 
+                                                                   while($row = mysqli_fetch_assoc($result_tasks)) {   ?>
+
+
+                                                                <option> <?php echo $row['especialidad'] ?></option>
+
+
+                                                                <!-- <option value="1">Cardiología</option>
+                                                                <option value="2">Oncología</option>
+                                                                <option value="3">Pediatría</option>
+                                                                <option value="4">Ginecología</option>
+                                                                <option value="5">Oftalmología</option>
+                                                                <option value="6">Traumatología</option>
+                                                                <option value="7">Odontología</option>
+                                                                <option value="8">Dermatología</option>
+                                                                <option value="9">Cirugía</option>
+                                                                <option value="10">Neurología</option>
+                                                                <option value="11">Urología</option>
+                                                                <option value="12">Nutrición</option> -->
+                                                                    
+                                                                <?php } ?>
+                                                                <?php  
+                                                            
+                                                                // if (isset($_POST['especialidad'])) {
+                                                            
+                                                                //     $_SESSION['espec'] = $_POST['especialidad'];
+                                                            
+                                                                // }
+                                                            
+                                                            ?>
+                                                            </select>                           
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Fecha:</label>
                                                         <div class="group">
@@ -173,15 +200,33 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Medico / Profesional:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
                                                             <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni"  required="required"/> -->
-                                                            <select class="form-control" name="medico" id="">
+                                                            
+                                                            <select class="form-control" name="medico" id="cdx_doctor" required="required">
                                                                 <option>Seleccionar medico</option>
-                                                                <option>Pedro Campos</option>
+
+                                                                
+                                                                <?php
+                                                                    // $dato = $_SESSION['espec'];
+                                                                    // $dato = $_POST['especialidad'];
+                                                                    // echo "perro";
+                                                                    // echo $id_espc;
+                                                                    // $query = "SELECT * FROM doctores WHERE especialidad = '$dato'";
+                                                                    $query = "SELECT * FROM doctores";
+                                                                    $result_tasks = mysqli_query($conn, $query); 
+                                                                    while($row = mysqli_fetch_assoc($result_tasks)) {  
+                                                                        
+                                                                ?>
+
+                                                                    
+                                                                    <option id="<?php echo $row['id_doctor'] ?>"> <?php echo $row['nombres'] ?> </option>
+
+                                                                <!-- <option>Pedro Campos</option>
                                                                 <option>Elena Ortiz</option>
                                                                 <option>Carlos Fuentes</option>
                                                                 <option>Mirella Vega</option>
@@ -192,18 +237,21 @@
                                                                 <option>Alonso Gomez</option>
                                                                 <option>Dulce Acosta</option>
                                                                 <option>Miguel Saravia</option>
-                                                                <option>Laura Ramirez</option>
+                                                                <option>Laura Ramirez</option> -->
+                                                                <?php } ?>
+
                                                             </select>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Hora:</label>
                                                         <div class="group">
                                                             <!-- <i class="fas fa-id-card"></i> -->
                                                             <!-- <input type="text" class="form-control" placeholder="DNI"  name="Dni"  required="required"/> -->
-                                                            <select class="form-control" name="hora" id="">
+                                                            <select class="form-control" name="hora" id="" required="required">
                                                                 <option>Seleccionar hora</option>
                                                                 <option>09:15am</option>
                                                                 <option>09:45am</option>
@@ -228,7 +276,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <Input id="elSubmit" class="btn btn-info mt-5" name= "Reservar_Cita" Type = "submit" value = "Reservar Cita">   
+                                                <Input id="elSubmit" class="btn btn-info mt-5 col-xs-12 col-sm-2" name= "Reservar_Cita" Type = "submit" value = "Reservar Cita">   
                                             </form>  
                                         </div>    
                                     </div>
@@ -335,10 +383,7 @@
             );
     } );
     </script>
-    <!-- <script>
-        $("#datepicker").datepicker();
-    </script> -->
-    
+
     <!-- /gauge.js -->
   </body>
 </html>

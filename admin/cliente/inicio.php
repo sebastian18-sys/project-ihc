@@ -77,14 +77,14 @@
               <?php if ($tipo=="administrador" or $tipo=="empleado") { ?>
 
               <!-- PRIMER CUADRO -->
-              <div class="col-lg-4 col-xs-6">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                   <div class="inner">
                   
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                     <h3>RESERVA TU CITA</h3>
-                    <p>Reserva tu cita web para HospitalSystem Lima</p>
+                    <p>Reserva tu cita web en Medilab</p>
                   </div>
                   
                   <!-- <div class="icon"><img height="80" width="80" src="img/cajero.png">

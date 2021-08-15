@@ -70,7 +70,7 @@
 
                                 <!-- <div class="col-md-12"> -->
                                     
-                                <div class="col-lg-3 col-xs-6">
+                                <div class="col-lg-3 col-sm-6 col-xs-12">
                                     <!-- small box -->
                                     <div class="small-box bg-aqua">
                                     <div class="inner">
@@ -95,7 +95,7 @@
                                     while($row = mysqli_fetch_assoc($result_tasks)) { 
                                 ?>
                                 
-                                <div class="col-lg-3 col-xs-6">
+                                <div class="col-lg-3 col-sm-6 col-xs-12">
                                   
                                     <div class="small-box bg-aqua">
                                     <div class="inner">
