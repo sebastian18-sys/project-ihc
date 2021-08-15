@@ -63,42 +63,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <label>DNI:</label>
                 <div class="group">
                     <i class="fas fa-id-card"></i>
-                    <input type="text" class="form-control" placeholder="DNI"  name="dni"  required="required" />
+                    <input type="text" class="form-control"  name="dni"  required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">
                 <label>Nombres:</label>
                 <div class="group">
                     <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Nombres"  name="nombres"  required="required" />
+                    <input type="text" class="form-control"   name="nombres"  required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">
                 <label>Apellidos:</label>
                 <div class="group">
                     <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" placeholder="Apellidos"  name="apellidos"  required="required" />
+                    <input type="text" class="form-control"   name="apellidos"  required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">
                 <label>Correo:</label>
                 <div class="group">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" class="form-control" placeholder="Correo" name="email"  required="required" />
+                    <input type="email" class="form-control"  name="email"  required="required" style="border: 0; outline: 0;" />
                 </div>
             </div>
             <div class=" w3l-form-group">
                 <label>Celular:</label>
                 <div class="group">
                     <i class="fas fa-phone"></i>
-                    <input type="text" class="form-control" placeholder="Celular" name="celular"  required="required" />
+                    <input type="text" class="form-control"  name="celular"  required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">
                 <label>Constraseña:</label>
                 <div class="group">
                     <i class="fas fa-unlock"></i>
-                    <input type="password" class="form-control" placeholder="Contraseña" name="password"  required="required" />
+                    <input type="password" class="form-control"  name="password"  required="required" />
                 </div>
             </div>
             <div class="forgot">
@@ -131,6 +131,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

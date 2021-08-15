@@ -13,7 +13,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="../sys-veterinaria/veterinaria_sistemasenoferta/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../sys-veterinaria/veterinaria_sistemasenoferta/bootstrap/css/bootstrap.min.css"> -->
     
     <!-- Font Awesome -->
     <!-- Theme style -->
@@ -50,21 +50,21 @@
         <h2>Bienvenidos al Sistema Hospitalario</h2>
     </div>
     <div class=" w3l-login-form">
-        <h2>Login </h2>
-    <form action="validar_inicio_sesion.php" method="POST">
+        <h2>Portal del paciente</h2>
+        <form action="validar_inicio_sesion.php" method="POST">
 
-            <div class=" w3l-form-group">
-                <label>DNI:</label>
+            <div class=" w3l-form-group input-filled">
+                <label>DNI</label>
                 <div class="group">
                     <i class="fas fa-id-card"></i>
-                    <input type="text" class="form-control" placeholder="DNI"  name="Dni"  required="required"/>
+                    <input type="text" class="form-control"   name="Dni"  required="required"/>
                 </div>
             </div>
             <div class=" w3l-form-group">
-                <label>Contraseña:</label>
+                <label>Contraseña</label>
                 <div class="group">
                     <i class="fas fa-unlock"></i>
-                    <input type="password" class="form-control" placeholder="Contraseña" name="Password"  required="required"/>
+                    <input type="password" class="form-control"  name="Password"  required="required"/>
                 </div>
             </div>
             <div class="forgot">
@@ -74,7 +74,7 @@
             <Input  class="btn btn-success" name= "iniciar_sesion" Type = "submit" value = "Iniciar Sesión">
             <a href="./register.php"><input class="button" Type="button" value="Si no tienes una cuenta regístrate"></a> 
     
-    </form>
+        </form>
  
     </div>
        <!-- <footer>
@@ -97,6 +97,7 @@
     <script src="dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
