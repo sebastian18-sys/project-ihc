@@ -101,6 +101,8 @@
                             </table>
                             </div>
                             <div class="cabecera-tabla"></div>
+
+                            
                             <script type="text/javascript">// < ![CDATA[
                                 function Eliminar (i) {
                                     document.getElementsByTagName("table")[0].setAttribute("id","tableid");
