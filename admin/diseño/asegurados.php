@@ -44,13 +44,14 @@ ul {
           <div class="box-body"></div>
           
           <div class="box-header">
-            <h3 class="box-title"> Asegurados</h3>
+            <h1 class="box-title"> Asegurados</h1>
           </div>
           <div class="box-body">
+          <div class="table-responsive">
             <table ID="example22" class="table table-bordered table-striped">
 
               <!-- Cabecera de la tabla -->
-              <thead>
+              <thead style="font-size: 20px">
                 <tr>
                   <th>DNI</th>
                   <th>Nombres</th>
@@ -61,7 +62,7 @@ ul {
                 </tr>
               </thead>
 
-              <tbody>
+              <tbody style="font-size: 18px">
 
 <?php
 
@@ -93,7 +94,9 @@ while($row = mysqli_fetch_assoc($result_tasks)) {
 
               </tbody>
             </table>
-          </div><!-- /.box-body -->       
+          </div><!-- /.box-body --> 
+          
+          <div class="cabecera-tabla"></div>
         </div><!--row-->
       </div><!-- /.col (right) -->
     </div><!-- /.box-body -->
