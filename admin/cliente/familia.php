@@ -61,9 +61,9 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                          
-                        <a href="./registrar_familia.php" style="border: 1px solid #1977c5; padding: 10px 10px; border-radius:5px;"><span class="btn btn-transparent_blue blue_sf margin_0 f-bold border_radius_18px">
-                            <span>Agrega un familiar</span>
-                            <i class="fas fa-plus"></i>
+                        <a href="./registrar_familia.php" class="btn btn-primary align-items-center" ><span class="btn btn-transparent_blue blue_sf margin_0 f-bold border_radius_18px">
+                            <span class="font-size:19">Agrega un familiar</span>
+                            <i class="fas fa-plus-circle" style="font-size: 25px"></i>
                         </span></a> 
                         <div class="box-body">
                             <div class="row">

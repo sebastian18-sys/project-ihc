@@ -131,7 +131,7 @@
                                         <div class="card-body">
                                             <form action="./editar_familiar.php" method="POST">   
 
-                                                 <div class="col-sm-4">
+                                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Nombres:</label>
                                                         <div class="group">
@@ -139,7 +139,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Apellidos:</label>
                                                         <div class="group">
@@ -147,7 +147,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Fecha de nacimiento:</label>
                                                         <div class="group">
@@ -155,7 +155,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>DNI:</label>
                                                         <div class="group">
@@ -163,7 +163,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Genero:</label>
                                                         <div class="group">
@@ -171,7 +171,7 @@
                                                         </div>
                                                     </div>
                                                 </div> 
-                                                <div class="col-sm-4">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
                                                     <div class=" w3l-form-group input-register-date">
                                                         <label>Telefono:</label>
                                                         <div class="group">

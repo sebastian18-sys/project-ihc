@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 70px;
   font-weight: 700;
   line-height: 56px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 4px;
   line-height: 80px;
   color: #2c4964;
