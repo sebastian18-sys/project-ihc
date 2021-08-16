@@ -28,6 +28,9 @@
     <!-- bootstrap-daterangepicker -->
     <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+    <!-- ICONO -->
+    <link href="../../logo/icono.jpg" rel="icon">
+
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
     <link href="build/css/custom.css" rel="stylesheet">
