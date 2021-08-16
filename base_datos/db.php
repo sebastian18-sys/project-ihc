@@ -2,7 +2,7 @@
 
 session_start();
 
-$host     = "base-datos-proyecto.cwspvo6flss8.us-east-2.rds.amazonaws.com"; //endpoint generado en el RDS
+$host     = "aa8kb1lc9042hc.cwspvo6flss8.us-east-2.rds.amazonaws.com"; //endpoint generado en el RDS
 $port     = 3306;
 $socket   = "";
 $user     = "admin";
