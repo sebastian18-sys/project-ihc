@@ -61,8 +61,8 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                          
-                        <a href="./registrar_familia.php" class="btn btn-primary align-items-center" ><span class="btn btn-transparent_blue blue_sf margin_0 f-bold border_radius_18px">
-                            <span class="font-size:19">Agrega un familiar</span>
+                        <a href="./registrar_familia.php" class="btn btn-primary" ><span class="btn btn-transparent_blue blue_sf margin_0 f-bold border_radius_18px">
+                            <span style="font-size: 18px">Agrega un familiar</span>
                             <i class="fas fa-plus-circle" style="font-size: 25px"></i>
                         </span></a> 
                         <div class="box-body">

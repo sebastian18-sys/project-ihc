@@ -59,14 +59,14 @@
                 <label>DNI</label>
                 <div class="group">
                     <i class="fas fa-id-card"></i>
-                    <input type="text" class="form-control"   name="Dni"  required="required"/>
+                    <input type="text" class="form-control"  name="Dni"  required="required"/>
                 </div>
             </div>
             <div class=" w3l-form-group">
                 <label>Contraseña</label>
                 <div class="group">
                     <i class="fas fa-unlock"></i>
-                    <input type="password" class="form-control"  name="Password"  required="required"/>
+                    <input type="password" class="form-control" name="Password"  required="required"/>
                 </div>
             </div>
             <div class="forgot">
