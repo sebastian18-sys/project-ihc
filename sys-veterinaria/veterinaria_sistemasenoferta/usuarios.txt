@@ -1,5 +1,0 @@
-
-USUARIO:
-admin
-CONTRASE�A:
-admin
